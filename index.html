@@ -7,102 +7,99 @@
     </head>
     <body>
         <header class="main-header">
-            <div class="container">
-                <div class="header-top">
-                    <div class="header-logo">
-                        <img src="img/" width="" height="" alt="студия nerds">
-                    </div>
-                    <nav class="main-nav">
-                        <ul>
-                            <li><a href="#">Студия</a></li>
-                            <li><a href="#">Клиенты</a></li>
-                            <li><a href="catalog.html">Магазин</a></li>
-                            <li><a href="#">Контакты</a></li>
-                        </ul>
-                    </nav>
-                    <a class="basket" href="#">Корзина</a>
-                </div>
-            
-                <div class="header-main">
-                    <input type="radio" id="rad-1" checked>
-                    <input type="radio" id="rad-2">
-                    <input type="radio" id="rad-3">
-                    <div class="slide-controls">
-                        <label for="rad-1"></label>
-                        <label for="rad-2"></label>
-                        <label for="rad-3"></label>
-                    </div>
-                    
-                    <div>
-                        <!--Первый слайд-->
-                        <div>
-                            <div>
-                                <p class="slide-title">Долго, дорого, скрупулезно.</p>
-                                <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-                                <a class="btn" href="#">узнать больше</a>
-                            </div>
-                            <div>
-                                <img src="img/" width="" height="">
-                            </div>
-                        </div>
-                        <!--Второй слайд-->
-                        <div>
-                            <div>
-                                <p class="slide-title">Любим математику как никто другой</p>
-                                <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
-                                <a class="btn" href="#">узнать больше</a>
-                            </div>
-                            <div>
-                                <img src="img/" width="" height="">
-                            </div>
-                        </div>
-                        <!--Третий слайд-->
-                        <div>
-                            <div>
-                                <p class="slide-title">Только ночь, только хардкор</p>
-                                <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-                                <a class="btn" href="#">узнать больше</a>
-                            </div>
-                            <div>
-                                <img src="img/" width="" height="">
-                            </div>
-                        </div>
-                        
-                    </div> 
-                </div>
-            </div>     
+            <a class="header-logo">
+                <img src="img/" width="" height="" alt="Логотип студии Nerds">
+            </a>
+            <nav class="main-nav">
+                <ul class="site-nav">
+                    <li><a href="#">Студия</a></li>
+                    <li><a href="#">Клиенты</a></li>
+                    <li><a href="catalog.html">Магазин</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </nav>
+            <a class="basket" href="#">Корзина</a>
         </header>
         
         <main>
+            <h1 class="visually-hidden">Студия Nerds</h1>
+            <section class="slider">
+                <h2 class="visually-hidden">Слайды</h2>
+                <input type="radio" id="btn-1" checked>
+                <input type="radio" id="btn-2">
+                <input type="radio" id="btn-3">
+                <div class="slide-controls">
+                    <label for="btn-1"></label>
+                    <label for="btn-2"></label>
+                    <label for="btn-3"></label>
+                </div>
+                
+                <div>
+                    <!--Первый слайд-->
+                    <section class="slide slide1">
+                        <div class="description-slider">
+                            <b class="slide-title">Долго, дорого, скрупулезно.</b>
+                            <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+                            <a class="btn" href="#">Узнать больше</a>
+                        </div>
+                        <div class="image-slider">       <!--может быть это фоновое изобр-->
+                            <img src="img/" width="" height="" alt="">
+                        </div>
+                    </section>
+                    <!--Второй слайд-->
+                    <section class="slide slide2">
+                        <div class="description-slider">
+                            <b class="slide-title">Любим математику как никто другой</b>
+                            <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+                            <a class="btn" href="#">Узнать больше</a>
+                        </div>
+                        <div class="image-slider">
+                            <img src="img/" width="" height="" alt="">
+                        </div>
+                    </section>
+                    <!--Третий слайд-->
+                    <section class="slide slide3">
+                        <div class="description-slider">
+                            <b class="slide-title">Только ночь, только хардкор</b>
+                            <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+                            <a class="btn" href="#">Узнать больше</a>
+                        </div>
+                        <div class="image-slider">
+                            <img src="img/" width="" height="" alt="">
+                        </div>
+                    </section>
+                    
+                </div> 
+            </section>    
+        
             <section class="services">
                 <h2 class="visually-hidden">Наши услуги</h2>
-                <div class="container">
-                    <ul class="services-list">
-                        <li class="service-item site">
-                            <img src="" alt="веб-сайты" width="" height="">
-                            <h3 class="service-title">веб-сайты</h3>
-                            <p>Мир никогда не будет прежним после того как увидит ваш сайт</p>
-                            <a class="btn btn-order" href="#">заказать</a>
-                        </li>
-                        <li class="service-item apps">
-                            <img src="" alt="приложения" width="" height="">
-                            <h3 class="service-title">приложения</h3>
-                            <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-                            <a class="btn btn-order" href="#">заказать</a>
-                        </li>
-                        <li class="service-item presents">
-                            <img src="" alt="презентации" width="" height="">
-                            <h3 class="service-title">презентации</h3>
-                            <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-                            <a class="btn btn-order" href="#">заказать</a>
-                        </li>
-                    </ul>
-                </div>
+                <ul class="services-list">
+                    <li class="service-item site">
+                        <img src="" alt="Веб-сайты" width="" height="">     <!-- это может быть фон-->
+                        <h3 class="service-title">Веб-сайты</h3>
+                        <p>Мир никогда не будет прежним после того как увидит ваш сайт</p>
+                        <a class="btn btn-order" href="#">Заказать</a>
+                    </li>
+                    <li class="service-item apps">
+                        <img src="" alt="Приложения" width="" height="">
+                        <h3 class="service-title">Приложения</h3>
+                        <p>Покорите топ-10 приложений в AppStore и Google Play</p>
+                        <a class="btn btn-order" href="#">Заказать</a>
+                    </li>
+                    <li class="service-item presents">
+                        <img src="" alt="Презентации" width="" height="">
+                        <h3 class="service-title">Презентации</h3>
+                        <p>Вы даже не подозреваете, насколько вы изумительны!</p>
+                        <a class="btn btn-order" href="#">Заказать</a>
+                    </li>
+                </ul>
             </section>
                     
-            <div class="reference">
+            <div class="about-company">
+                <h2 class="visually-hidden">О нашей компании</h2>
                 <div class="container">
-                    <div class="reference-left">    <!--может article-->
+                    <div class="about-descript">   
                         <b class="reference-title">Мы — маленькая, но гордая дизайн-студия из Краснодара.</b>
                         <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
                         <b>Выполняем заказы на разработку:</b>
@@ -113,23 +110,24 @@
                         </ul>
                     </div>
                     
-                    <div class="reference-right"> 
-                        <p>с 2004 года Любим точность во всем:</p>
-                        <ul class="features-list">
+                    <div class="about-stat"> 
+                        <p>С 2004 года любим точность во всем:</p>
+                        <ul class="stat-list">
                             <li class="feature-item">
                                 146<span>%</span>
-                                <span class="feature-note">Уровень самоотдачи</span>
+                                <span class="note">Уровень самоотдачи</span>
                             </li>
                             <li class="feature-item">
                                 100<span>%</span>
-                                <span class="feature-note">Соблюдение сроков</span>
+                                <span class="note">Соблюдение сроков</span>
                             </li>
                             <li class="feature-item">
                                 50<span>%</span>
-                                <span class="feature-note">Минимальная предоплата</span>
+                                <span class="note">Минимальная предоплата</span>
                             </li>
                         </ul>    
                     </div>
+                    
                 </div>
             </div>
             
@@ -150,12 +148,15 @@
         </main>
         
         <footer class="main-footer">
-            <iframe></iframe>
+            <section class="card">
+                <iframe></iframe>
+            </section>
             <section class="contacts">
                 <h3>NЁRDS DESIGN STUDIO</h3>
-                <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+                <p>191186, Санкт-Петербург,<br>
+                    ул. Б. Конюшенная, д. 19/8</p>
                 <p>тел. +7 (812) 275-75-75</p>
-                <a class="btn" href="#">напишите нам</a>
+                <a class="btn" href="#">Напишите нам</a>
             </section>
              
             <div class="footer-bottom">
@@ -172,8 +173,12 @@
                 </div>
             </div> 
         </footer>
-
-    
+        
+        <section class="modal write-us">
+            <h2>Напишите нам</h2>
+            <!-- Здесь будет форма -->
+            <span class="modal-close">x</span>
+        </section>
       
         <!--
         <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>-->
