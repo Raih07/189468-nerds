@@ -8,7 +8,7 @@
     <body>
         <header class="main-header">
             <a class="header-logo" href="index.html">
-                <img src="img/" width="160" height="65" alt="Логотип студии Nerds">
+                <img src="img/" width="160" height="65" alt="Логотип студии Nerd's">
             </a>
             <nav class="main-nav">
                 <ul class="site-nav">
@@ -31,24 +31,24 @@
             
             <section class="catalog">
                 <h2 class="visually-hidden">Список шаблонов</h2>
-                <div class="sort">
+                <div class="sort-filter">
                     <span class="sort-main">Сортировать:</span>
                     <ul class="sort-type">
-                        <li>по цене</li>
-                        <li>по типу</li>
-                        <li>по названию</li>
-                        <li><span class="icon icon-down active">вниз</span><span class="icon icon-up">вверх</span></li>
+                        <li><a href="#">по цене</a></li>
+                        <li><a href="#">по типу</a></li>
+                        <li><a href="#">по названию</a></li>
+                        <li><a href="#"><span class="icon icon-down active">вниз</span></a>
+                            <a href="#"><span class="icon icon-up">вверх</span></a>
+                        </li>
                     </ul>
                 </div>
-                
-                
                 <ul class="catalog-list">
                     <li class="catalog-item">
                         <img src="img/" width="360" height="576" alt="шаблон Sedona">
                         <div class="description-item">
                             <h3>Sedona</h3>
                             <p>Информационный сайт для туристов</p>
-                            <button class="btn">9900 руб.</button>
+                            <a class="btn" href="#">9900 руб.</a>
                         </div>
                     </li>
                     <li class="catalog-item">
@@ -56,7 +56,7 @@
                         <div class="description-item">
                             <h3>Pink app</h3>
                             <p>Продуктовый лендинг приложения для iOS и Android</p>
-                            <button class="btn">9900 руб.</button>
+                            <a class="btn" href="#">9900 руб.</a>
                         </div>
                     </li>
                     <li class="catalog-item">
@@ -64,7 +64,7 @@
                         <div class="description-item">
                             <h3>Barbershop</h3>
                             <p>Сайт салоны красоты. Для мужчин, да.</p>
-                            <button class="btn">9900 руб.</button>
+                            <a class="btn" href="#">9900 руб.</a>
                         </div>
                     </li>
                     <li class="catalog-item">
@@ -72,7 +72,7 @@
                         <div class="description-item">
                             <h3>Mishka</h3>
                             <p>Интернет-магазин вязаных игрушек</p>
-                            <button class="btn">9900 руб.</button>
+                            <a class="btn" href="#">9900 руб.</a>
                         </div>
                     </li>
                     <li class="catalog-item">
@@ -80,7 +80,7 @@
                         <div class="description-item">
                             <h3>A plus</h3>
                             <p>Лендинг курсов повышения квалификации</p>
-                            <button class="btn">9900 руб.</button>
+                            <a class="btn" href="#">9900 руб.</a>
                         </div>
                     </li>
                     <li class="catalog-item">
@@ -88,7 +88,7 @@
                         <div class="description-item">
                             <h3>Кваст</h3>
                             <p>Промо-сайт производителя крафтового кваса</p>
-                            <button class="btn">9900 руб.</button>
+                            <a class="btn" href="#">9900 руб.</a>
                         </div>
                     </li>
                 </ul>
@@ -102,25 +102,27 @@
         </main>
         
         <footer class="main-footer">
-            <section class="card">
+            <section class="card-and-contacts">
                 <iframe></iframe>
+                <div class="container">
+                    <div class="contacts">
+                        <h3>NЁRDS DESIGN STUDIO</h3>
+                        <p>191186, Санкт-Петербург,
+                        ул. Б. Конюшенная, д. 19/8</p>
+                        <p>тел. +7 (812) 275-75-75</p>
+                        <a class="btn" href="#">Напишите нам</a>
+                    </div>
+                </div>  
             </section>
-            <section class="contacts">
-                <h3>NЁRDS DESIGN STUDIO</h3>
-                <p>191186, Санкт-Петербург,<br>
-                    ул. Б. Конюшенная, д. 19/8</p>
-                <p>тел. +7 (812) 275-75-75</p>
-                <a class="btn" href="#">Напишите нам</a>
-            </section>
-             
+            
             <div class="footer-bottom">
                 <div class="container">
                     <div class="footer-social">
                         <a class="social-btn social-btn-vk" href="#">вконтакте</a>
-                        <a class="social-btn social-btn- fb" href="#">вконтакте</a>
+                        <a class="social-btn social-btn-fb" href="#">вконтакте</a>
                         <a class="social-btn social-btn-in" href="#">вконтакте</a>
                     </div>
-                    <div class="promo">
+                    <div class="promos">
                         <b>Давайте дружить, это выгодно!</b>
                         <p>Скидка 10% для друзей из социальных сетей.</p>
                     </div>

@@ -8,7 +8,7 @@
     <body>
         <header class="main-header">
             <a class="header-logo">
-                <img src="img/" width="160" height="65" alt="Логотип студии Nerds">
+                <img src="img/" width="160" height="65" alt="Логотип студии Nerd's">
             </a>
             <nav class="main-nav">
                 <ul class="site-nav">
@@ -36,7 +36,7 @@
                 
                 <div>
                     <!--Первый слайд-->
-                    <section class="slide slide1">
+                    <div class="slide slide1"><!--пусть будет обычный div, article мне кажется сюда тоже не подходит-->
                         <div class="description-slider">
                             <b class="slide-title">Долго, дорого, скрупулезно.</b>
                             <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
@@ -45,9 +45,9 @@
                         <div class="image-slider">       <!--может быть это фоновое изобр-->
                             <img src="img/" width="698" height="413" alt="">
                         </div>
-                    </section>
+                    </div>
                     <!--Второй слайд-->
-                    <section class="slide slide2">
+                    <div class="slide slide2">
                         <div class="description-slider">
                             <b class="slide-title">Любим математику как никто другой</b>
                             <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
@@ -56,9 +56,9 @@
                         <div class="image-slider">
                             <img src="img/" width="663" height="430" alt="">
                         </div>
-                    </section>
+                    </div>
                     <!--Третий слайд-->
-                    <section class="slide slide3">
+                    <div class="slide slide3">
                         <div class="description-slider">
                             <b class="slide-title">Только ночь, только хардкор</b>
                             <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
@@ -67,7 +67,7 @@
                         <div class="image-slider">
                             <img src="img/" width="759" height="411" alt="">
                         </div>
-                    </section>
+                    </div>
                     
                 </div> 
             </section>    
@@ -97,20 +97,21 @@
             </section>
                    
             <section class="about-company">
-                <h2 class="visually-hidden">О нашей компании</h2>
+        <!--        <h2 class="visually-hidden">О нашей компании</h2>-->
                 <div class="container">
                     <div class="about-descript">   
                         <b class="reference-title">Мы — маленькая, но гордая дизайн-студия из Краснодара.</b>
                         <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
                         <h3>Выполняем заказы на разработку:</h3>
                         <ul>
-                            <li><span>&#8212</span>Веб-сайтов любой сложности</li>
-                            <li><span>&#8212</span>Мобильных приложений для iOS и Android</li>
-                            <li><span>&#8212</span>Слайдшоу и видео для корпоративных презентаций</li>
+                            <li><span>&#8212;</span>Веб-сайтов любой сложности</li>
+                            <li><span>&#8212;</span>Мобильных приложений для iOS и Android</li>
+                            <li><span>&#8212;</span>Слайдшоу и видео для корпоративных презентаций</li>
                         </ul>
                     </div>
                     
-                    <div class="about-stat"> 
+                    <div class="about-stat">
+                        <img src="img/" width="360" height="208" alt="логотип nerd's">
                         <p>С 2004 года любим точность во всем:</p>
                         <ul class="stat-list">
                             <li class="feature-item">
@@ -131,33 +132,37 @@
                 </div>
             </section>
             
-            <ul class="logos-list">   
+            <section class="logos">
+                <h2 class="visually-hidden">Наши клиенты</h2>
+                <ul class="logos-list">   
                     <li class="logo-item academy">
-                        <img src="img/" width="199" height="68" alt="html academy">
+                        <a href="#"><img src="img/" width="199" height="68" alt="html academy"></a>
                     </li>
                     <li class="logo-item borodinski">
-                        <img src="img/" width="209" height="90" alt="barbershop borodinski">
+                        <a href="#"><img src="img/" width="209" height="90" alt="barbershop borodinski"></a>
                     </li>
                     <li class="logo-item pink">
-                        <img src="img/" width="185" height="52" alt="pink">
+                        <a href="#"><img src="img/" width="185" height="52" alt="pink"></a>
                     </li>
                     <li class="logo-item mishka">
-                        <img src="img/" width="173" height="84" alt="mishka">
+                        <a href="#"><img src="img/" width="173" height="84" alt="mishka"></a>
                     </li>
             </ul>
+            </section>     
         </main>
         
         <footer class="main-footer">
             <section class="card-and-contacts">
                 <iframe></iframe>
-                
-                <section class="contacts">
-                    <h3>NЁRDS DESIGN STUDIO</h3>
-                    <p>191186, Санкт-Петербург,<br>
+                <div class="container">
+                    <div class="contacts">
+                        <h3>NЁRDS DESIGN STUDIO</h3>
+                        <p>191186, Санкт-Петербург,
                         ул. Б. Конюшенная, д. 19/8</p>
-                    <p>тел. +7 (812) 275-75-75</p>
-                    <a class="btn" href="#">Напишите нам</a>
-                </section>
+                        <p>тел. +7 (812) 275-75-75</p>
+                        <a class="btn" href="#">Напишите нам</a>
+                    </div>
+                </div>  
             </section>
             
              
@@ -165,10 +170,10 @@
                 <div class="container">
                     <div class="footer-social">
                         <a class="social-btn social-btn-vk" href="#">вконтакте</a>
-                        <a class="social-btn social-btn- fb" href="#">вконтакте</a>
+                        <a class="social-btn social-btn-fb" href="#">вконтакте</a>
                         <a class="social-btn social-btn-in" href="#">вконтакте</a>
                     </div>
-                    <div class="promo">
+                    <div class="promos">
                         <b>Давайте дружить, это выгодно!</b>
                         <p>Скидка 10% для друзей из социальных сетей.</p>
                     </div>
