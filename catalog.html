@@ -27,6 +27,42 @@
             <section class="filters">
                 <h2 class="visually-hidden">Фильтр шаблонов</h2>
                 <!-- Здесь будет форма -->
+                <form action="/echo" method="post">
+                    <span class="filter-title">Стоимость:</span>
+                    <div class="filter-cost-slider">
+                        <div class="scale">
+                            <div class="thumb thumb-left"></div>
+                            <div class="thumb thumb-right"></div>
+                        </div>
+                    </div>
+                    <div class="output-cost">
+                        <label><input id="min-cost" name="min-cost" type="text" value="0" ></label>
+                        <label><input id="max-cost" name="max-cost" type="text" value="15000"></label>
+                    </div>
+                    
+                    <label>Сетка:</label>
+                    <input id="radio-adap" name="adap" type="radio" checked>
+                    <label for="radio-adap">Адаптивная</label>
+                    <input id="radio-fix" name="fix" type="radio">
+                    <label for="radio-fix">Фиксированная</label>
+                    <input id="radio-elastic" name="elastic" type="radio">
+                    <label for="radio-elastic">Резиновая</label>
+                    
+                    <label>Особенности:</label>
+                    <input id="check-slider" name="slider" type="checkbox" checked>
+                    <label for="check-slider">Слайдер</label>
+                    <input id="check-feature" name="feature" type="checkbox">
+                    <label for="check-feature">Блок преимуществ</label>
+                    <input id="check-news" name="news" type="checkbox">
+                    <label for="check-news">Новости</label>
+                    <input id="check-galery" name="galery" type="checkbox">
+                    <label for="check-galery">Галерея</label>
+                    <input id="check-basket" name="basket" type="checkbox">
+                    <label for="check-basket">Корзина</label>
+                    
+                    <button class="btn" type="submit">Показать</button>
+                    
+                </form>
             </section>
             
             <section class="catalog">
