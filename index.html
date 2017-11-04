@@ -184,6 +184,23 @@
         <section class="modal write-us">
             <h2>Напишите нам</h2>
             <!-- Здесь будет форма -->
+            <form class="feedback-form" action="" method="post">
+                <div class="wrapper">
+                    <div class="feedback-form-group feedback-form-group-left-part">
+                        <label for="fullname">Ваше имя:</label>
+                        <input type="text" name="fullname" id="fullname" placeholder="Представьтесь, пожалуйста">
+                    </div>
+                    <div class="feedback-form-group feedback-form-group-right-part">
+                        <label for="email">Ваш e-mail:</label>
+                        <input type="text" name="email" id="email" placeholder="Для отправки ответа">
+                    </div>
+                </div>
+                <div class="feedback-form-group">
+                    <label for="message">Текст письма:</label>
+                    <textarea name="message" id="message" placeholder="В свободной форме"></textarea>
+                </div>
+                <button class="btn">Отправить</button>
+            </form>
             <span class="modal-close">x</span>
         </section>
       
