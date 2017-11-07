@@ -1,0 +1,19 @@
+@font-face  {
+    font-family: "Roboto";
+    src:
+        local("Roboto Regular"),
+        local("Roboto-Regular"),
+        url("../fonts/web/roboto.woff") format("woff");
+    
+}
+
+body    {
+    min-width: 1160px;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: "Roboto", "Arial", sans-serif;
+    color: #283136;
+    background-color: white;
+}
