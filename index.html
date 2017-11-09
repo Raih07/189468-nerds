@@ -7,27 +7,29 @@
     </head>
     <body>
         <header class="main-header">
+			<div class="container">
             <a class="header-logo">
                 <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип студии Nerd's">
             </a>
             <nav class="main-nav">
                 <ul class="site-nav">
-                    <li><a href="#">Студия</a></li>
+                    <li><a href="#" class="active">Студия</a></li>
                     <li><a href="#">Клиенты</a></li>
                     <li><a href="catalog.html">Магазин</a></li>
                     <li><a href="#">Контакты</a></li>
                 </ul>
             </nav>
-            <a class="basket" href="#">Корзина</a>
+            <a class="basket active" href="#">Корзина</a>
+		</div>
         </header>
         
         <main>
             <h1 class="visually-hidden">Студия Nerds</h1>
             <section class="slider-gallery">
                 <h2 class="visually-hidden">Слайды</h2>
-                <input type="radio" id="btn-1" checked>
-                <input type="radio" id="btn-2">
-                <input type="radio" id="btn-3">
+                <input type="radio" name="toggle" id="btn-1" checked>
+                <input type="radio" name="toggle" id="btn-2">
+                <input type="radio" name="toggle" id="btn-3">
                 <div class="slide-controls">
                     <label for="btn-1"></label>
                     <label for="btn-2"></label>
@@ -133,10 +135,10 @@
             </section>
             
             <section class="logos">
-                <h2 class="visually-hidden">Наши клиенты</h2>
+                <h2 class="visually-hidden">Наши партнеры</h2>
                 <ul class="logos-list">   
                     <li class="logo-item academy">
-                        <a href="#"><img src="img/logo-1.png" width="199" height="68" alt="html academy"></a>
+                        <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-1.png" width="199" height="68" alt="html academy"></a>
                     </li>
                     <li class="logo-item borodinski">
                         <a href="#"><img src="img/logo-2.png" width="209" height="90" alt="barbershop borodinski"></a>
