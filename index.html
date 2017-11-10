@@ -11,7 +11,7 @@
             <a class="header-logo">
                 <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип студии Nerd's">
             </a>
-            <nav class="main-nav">
+            <nav class="main-nav" aria-label="Навигация по сайту">
                 <ul class="site-nav">
                     <li><a href="#" class="active">Студия</a></li>
                     <li><a href="#">Клиенты</a></li>
@@ -24,12 +24,13 @@
         </header>
         
         <main>
+			<div class="container">
             <h1 class="visually-hidden">Студия Nerds</h1>
             <section class="slider-gallery">
                 <h2 class="visually-hidden">Слайды</h2>
-                <input type="radio" name="toggle" id="btn-1" checked>
-                <input type="radio" name="toggle" id="btn-2">
-                <input type="radio" name="toggle" id="btn-3">
+                <input type="radio" name="toggle" id="btn-1" classs="visually-hidden" checked>
+                <input type="radio" name="toggle" id="btn-2" classs="visually-hidden">
+                <input type="radio" name="toggle" id="btn-3" classs="visually-hidden">
                 <div class="slide-controls">
                     <label for="btn-1"></label>
                     <label for="btn-2"></label>
@@ -72,28 +73,29 @@
                     </div>
                     
                 </div> 
-            </section>    
+            </section>
+			</div>
         
             <section class="services">
                 <h2 class="visually-hidden">Наши услуги</h2>
                 <ul class="services-list">
-                    <li class="service-item site">
-                        <img src="img/illustration-1.png" alt="Веб-сайты" width="300" height="146">     <!-- это может быть фон-->
+                    <li class="service-item service-site">
+                        <img src="img/illustration-1.png" alt="Ноутбук  с открытой веб-страницей" width="300" height="146">     <!-- это может быть фон-->
                         <h3 class="service-title">Веб-сайты</h3>
                         <p>Мир никогда не будет прежним после того как увидит ваш сайт</p>
-                        <a class="btn btn-order" href="#">Заказать</a>
+                        <a class="btn service-site-btn" href="#">Заказать</a>
                     </li>
-                    <li class="service-item apps">
+                    <li class="service-item service-apps">
                         <img src="img/illustration-2.png" alt="Приложения" width="300" height="146">
-                        <h3 class="service-title">Приложения</h3>
+                        <h3 class="service-title">Два смартфона с открытыми приложениями</h3>
                         <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-                        <a class="btn btn-order" href="#">Заказать</a>
+                        <a class="btn service-apps-btn" href="#">Заказать</a>
                     </li>
-                    <li class="service-item presents">
+                    <li class="service-item service-presents">
                         <img src="img/illustration-3.png" alt="Презентации" width="300" height="146">
-                        <h3 class="service-title">Презентации</h3>
+                        <h3 class="service-title">Схемотичный слайд из презентации</h3>
                         <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-                        <a class="btn btn-order" href="#">Заказать</a>
+                        <a class="btn service-presents-btn" href="#">Заказать</a>
                     </li>
                 </ul>
             </section>
@@ -102,9 +104,9 @@
         <!--        <h2 class="visually-hidden">О нашей компании</h2>-->
                 <div class="container">
                     <div class="about-descript">   
-                        <b class="reference-title">Мы — маленькая, но гордая дизайн-студия из Краснодара.</b>
+                        <b class="about-company-title">Мы — маленькая, но гордая дизайн-студия из Краснодара.</b>
                         <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
-                        <h3>Выполняем заказы на разработку:</h3>
+                        <h3 class="about-company-subtitle">Выполняем заказы на разработку:</h3>
                         <ul>
                             <li><span>&#8212;</span>Веб-сайтов любой сложности</li>
                             <li><span>&#8212;</span>Мобильных приложений для iOS и Android</li>
@@ -113,19 +115,19 @@
                     </div>
                     
                     <div class="about-stat">
-                        <img src="img/nerds-illustration.png" width="360" height="208" alt="логотип nerd's">
-                        <p>С 2004 года любим точность во всем:</p>
+                        <img src="img/nerds-illustration.png" width="360" height="208" alt="логотип студии nerd's на фоне разноцветных конфити">
+						<b class="about-company-subtitle">С 2004 года любим точность во всем:</b>
                         <ul class="stat-list">
-                            <li class="feature-item">
-                                146<span>%</span>
+                            <li class="stat-item">
+                                146<sup>%</sup>
                                 <span class="note">Уровень самоотдачи</span>
                             </li>
-                            <li class="feature-item">
-                                100<span>%</span>
+                            <li class="stat-item">
+                                100<sup>%</sup>
                                 <span class="note">Соблюдение сроков</span>
                             </li>
-                            <li class="feature-item">
-                                50<span>%</span>
+                            <li class="stat-item">
+                                50<sup>%</sup>
                                 <span class="note">Минимальная предоплата</span>
                             </li>
                         </ul>    
@@ -138,16 +140,16 @@
                 <h2 class="visually-hidden">Наши партнеры</h2>
                 <ul class="logos-list">   
                     <li class="logo-item academy">
-                        <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-1.png" width="199" height="68" alt="html academy"></a>
+                        <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-1.png" width="199" height="68" alt="логотип html academy"></a>
                     </li>
                     <li class="logo-item borodinski">
-                        <a href="#"><img src="img/logo-2.png" width="209" height="90" alt="barbershop borodinski"></a>
+                        <a href="#"><img src="img/logo-2.png" width="209" height="90" alt="логотип barbershop borodinski"></a>
                     </li>
                     <li class="logo-item pink">
-                        <a href="#"><img src="img/logo-3.png" width="185" height="52" alt="pink"></a>
+                        <a href="#"><img src="img/logo-3.png" width="185" height="52" alt="логотип pink"></a>
                     </li>
                     <li class="logo-item mishka">
-                        <a href="#"><img src="img/logo-4.png" width="173" height="84" alt="mishka"></a>
+                        <a href="#"><img src="img/logo-4.png" width="173" height="84" alt="логотип mishka"></a>
                     </li>
             </ul>
             </section>     
@@ -156,7 +158,7 @@
         <footer class="main-footer">
             <section class="card-and-contacts">
                 <iframe></iframe>
-                <img src="img/map.png" width="1440" height="416" alt="Карта">
+                <img src="img/map.png" width="1440" height="416" alt="Карта расположения офиса компании">
                 <img src="img/map-marker.png" width="231" height="190" alt="Указатель на карте">
                 <div class="container">
                     <div class="contacts">
@@ -164,7 +166,7 @@
                         <p>191186, Санкт-Петербург,
                         ул. Б. Конюшенная, д. 19/8</p>
                         <p>тел. +7 (812) 275-75-75</p>
-                        <a class="btn" href="#">Напишите нам</a>
+                        <a class="btn btn-wtite-us" href="#">Напишите нам</a>
                     </div>
                 </div>  
             </section>
@@ -173,11 +175,11 @@
             <div class="footer-bottom">
                 <div class="container">
                     <div class="footer-social">
-                        <a class="social-btn social-btn-vk" href="#">вконтакте</a>
-                        <a class="social-btn social-btn-fb" href="#">вконтакте</a>
-                        <a class="social-btn social-btn-in" href="#">вконтакте</a>
+                        <a class="social-btn social-btn-vk" href="#" aria-label="Вконтакте"></a>
+                        <a class="social-btn social-btn-fb" href="#" aria-label="Facebook"></a>
+                        <a class="social-btn social-btn-in" href="#" aria-label="Instagram"></a>
                     </div>
-                    <div class="promos">
+                    <div class="footer-promos">
                         <b>Давайте дружить, это выгодно!</b>
                         <p>Скидка 10% для друзей из социальных сетей.</p>
                     </div>
@@ -185,27 +187,27 @@
             </div> 
         </footer>
         
-        <div class="modal write-us">
+        <div class="modal-write-us">
             <h2>Напишите нам</h2>
             <!-- Здесь будет форма -->
             <form class="feedback-form" action="" method="post">
                 <div class="wrapper">
-                    <div class="feedback-form-group feedback-form-group-left-part">
-                        <label for="fullname">Ваше имя:</label>
-                        <input type="text" name="fullname" id="fullname" placeholder="Представьтесь, пожалуйста">
+                    <div class="feedback-form-group feedback-form-name">
+                        <label for="feedback-form-fullname">Ваше имя:</label>
+                        <input type="text" name="fullname" id="feedback-form-fullname" placeholder="Представьтесь, пожалуйста">
                     </div>
-                    <div class="feedback-form-group feedback-form-group-right-part">
-                        <label for="email">Ваш e-mail:</label>
-                        <input type="text" name="email" id="email" placeholder="Для отправки ответа">
+                    <div class="feedback-form-group feedback-form-email">
+                        <label for="feedback-form-email">Ваш e-mail:</label>
+                        <input type="text" name="email" id="feedback-form-email" placeholder="Для отправки ответа">
                     </div>
                 </div>
                 <div class="feedback-form-group">
-                    <label for="message">Текст письма:</label>
-                    <textarea name="message" id="message" placeholder="В свободной форме"></textarea>
+                    <label for="feedback-form-message">Текст письма:</label>
+                    <textarea name="message" id="feedback-form-message" placeholder="В свободной форме"></textarea>
                 </div>
                 <button class="btn" type="submit">Отправить</button>
             </form>
-            <span class="modal-close">x</span>
+            <button class="modal-close" type="button" aria-label="закрыть"></button>
         </div>
       
         <!--
