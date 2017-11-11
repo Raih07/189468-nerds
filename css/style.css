@@ -38,15 +38,21 @@ body {
 .main-header .container {
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
+	flex-wrap: wrap;
+	jusstify-content: space-between;
 }
 
 .main-header {
     padding-top: 49px;
 	line-height: 30px;
     color: #000000;
-    background-color: #eeeeee;
+    background-color:cornflowerblue;/*#eeeeee*/
 	
+}
+
+.header-logo {
+	flex-grow: 2;
+	background-color: darkgoldenrod
 }
 
 .header-logo img {
@@ -62,16 +68,22 @@ body {
     opacity: 0.3;
 }
 
+.main-nav {
+	flex-grow: 1;
+	background-color: bisque;
+}
 .main-nav ul {
     margin: 0;
-	margin-left: 200px;
+	mmargin-left: 200px;
 	margin-top: 7px;
     padding: 0;
     list-style: none;
 	display: flex;
 	flex-wrap: wrap;
 	
-	width: 640px;
+	min-width: 400px;
+	max-width: 800px;
+	width: 600px;/*640*/
 	background-color: yellow;
 }
 
@@ -79,7 +91,7 @@ body {
     text-transform: uppercase;
 	/*flex-grow: 1;*/
 	background-color: aqua;
-	margin-right: 46px;
+	margin-right: 25px;/*46px*/
 	/*float: left;*/
 	/*margin-right: 46px;*/
 	
@@ -92,6 +104,7 @@ body {
 
 .main-nav a {
 	display: inline-block;
+	padding: 10px;
 	padding-bottom: 5px;
 	padding-top: 5px;
 	font-weight: 500;
@@ -123,11 +136,11 @@ body {
 	text-decoration: none;
 	text-transform: uppercase;
 	display: inline-block;
+	margin-top: 7px;
 	padding-bottom: 5px;
 	padding-top: 5px;
 	color: #000000;
-	
-	
+	vertical-align: bottom;
 }
 
 .basket::before {
@@ -136,6 +149,7 @@ body {
 	min-height: 15px;
 	min-width: 15px;
 	margin-right: 25px;
+	margin-bottom: 2px;
 	vertical-align: middle;
 	background-image: url("../img/cart-icon.svg");
 	opacity: 0.3;
@@ -161,6 +175,33 @@ body {
 .basket.active {
 	border-bottom: 2px solid #fb565a;
 }
+
+.slider-gallery {
+	min-height: 430px;
+	position: relative;
+}
+
+.slider-gallery input[type=radio] {
+	display: none;
+}
+
+.slide1, .slide2, .slide3 {
+	display: none;
+}
+
+#btn-1:checked ~ .slide-controls label[for="btn-1"]:after,
+#btn-2:checked ~ .slide-controls label[for="btn-2"]:after,
+#btn-3:checked ~ .slide-controls label[for="btn-3"]:after {
+    opacity: 1;
+}
+
+#btn-1:checked ~ .slider-gallery .slide1,
+#btn-2:checked ~ .slider-gallery .slide2,
+#btn-3:checked ~ .slider-gallery .slide3 {
+	display: block;
+}
+
+
 
 .slide .slide-title {
 	font-weight: 500;
@@ -271,6 +312,55 @@ body {
 	background-color: #e5a722;
 	box-shadow: inset 0 3px rgba(0, 1, 1, 0.1);
 }
+
+
+
+
+
+
+.slide-controls {
+	position: absolute;
+	bottom: 96px;
+	width: 100%;
+	text-align: center;
+	font-size: 0;
+	background-color: coral;
+}
+
+.slide-controls label {
+	display: inline-block;
+	box-sizing: border-box;
+	position: relative;
+	vertical-align: middle;
+	margin-right: 17px;
+	width: 18px;
+	height: 18px;
+	background-color: #ffffff;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.slide-controls label::after {
+	content: "";
+	position: absolute;
+	box-sizing: border-box;
+	top: 50%;
+	margin-top: -4px;
+	left: 50%;
+	margin-left: -4px;
+	opacity: 0;
+	width: 8px;
+	height: 8px;
+	background-color: #ffffff;
+	border: 2px solid rgba(0, 0, 0, 0.4);
+	border-radius: 50%;
+}
+
+
+
+
+
+
 
 .about-company-title {
 	font-weight: 500;
