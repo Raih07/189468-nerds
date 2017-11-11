@@ -33,6 +33,7 @@ body {
     width: 1160px;
     margin: 0 auto;
 }
+
 /*можно слить вверх и низ*/
 .main-header .container {
 	display: flex;
@@ -165,7 +166,6 @@ body {
 	font-weight: 500;
     font-size: 55px;
     line-height: 55px;
-    font-family: "Roboto", "Arial", sans-serif;
     color: #000000;
 }
 
@@ -239,7 +239,6 @@ body {
 .service-apps-btn:hover {
 	background-color: #00bc6c;
 }
-
 
 .service-apps-btn:focus {
 	box-shadow: 
@@ -383,3 +382,196 @@ body {
 .modal-write-us .modal-close:active {
 	opacity: 0.1;
 }
+
+/********Страница каталога********/
+
+.page-title-catalog {
+	font-weight: 500;
+    font-size: 55px;
+    line-height: 55px;
+    color: #000000;
+	text-align: center;
+	background-color: #eeeeee;
+}
+
+.filters {
+  width: 260px;
+}
+
+.filters fieldset {
+	bborder: none;
+	margin: 0;
+	padding: 0;
+}
+
+.filter-title {
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 30px;
+	color: 000000;
+	text-transform: uppercase;
+}
+
+.filter-cost label {
+	font-size: 16px;
+	line-height: 22px;
+	color: #283136;
+}
+
+.filter-grid label {
+	font-size: 16px;
+	line-height: 20px;
+	color: #283136;
+}
+
+.filter-grid label {
+	font-size: 16px;
+	line-height: 20px;
+	color: #283136;
+}
+
+.btn-filter {
+	box-sizing: border-box;
+	background-color: #eeeeee;
+	width: 100%;
+	color: #000000;
+}
+
+.btn-filter:hover {
+	background-color: #dfdfdf;
+}
+
+.btn-filter:active {
+	color: rgba(255, 255, 255, 0.3);
+	background-color: #d5d5d5;
+	box-shadow: inset 0 3px rgba(0, 1, 1, 0.1);
+}
+
+.catalog {
+	width: 760px;
+}
+
+.sort-filter-tittle {
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 18px;
+	color: #000000;
+	text-transform: uppercase;
+}
+
+.sort-filter-type {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.sort-filter-type li:last-child {
+	font-size: 0;
+}
+
+.sort-filter-type a {
+	font-size: 14px;
+	line-height: 18px;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #000000;
+	opacity: 0.3;
+}
+
+.sort-filter-type a:hover {
+	opacity: 0.6;
+}
+
+.sort-filter-type a:active {
+	opacity: 1;
+}
+
+a.sort-type-active {
+	opacity: 1;
+}
+
+.sort-filter-type .sort-icon {
+	display: inline-block;
+	width: 11px;
+	height: 10px;
+	vertical-align: middle;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.sort-filter-type .sort-icon-down {
+	background-image: url("../img/icon-down-dir.svg");
+}
+
+.sort-filter-type .sort-icon-up {
+	background-image: url("../img/icon-up-dir.svg");
+	margin-left: 18px;
+}
+
+.sort-filter-type .sort-icon-active {
+	opacity: 1;
+}
+
+.catalog-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	ddisplay: flex;
+}
+
+.catalog-item {
+	width: 360px;
+}
+
+.description-item {
+	text-align: center;
+}
+
+.catalog-tittle {
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 30px;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #000000;
+}
+
+.catalog-tittle h3 {
+	margin: 0;
+}
+
+.description-item p {
+	margin: 0;
+}
+
+.btn-buy {
+	width: 160px;
+}
+
+.btn-buy:active {
+	width: 160px;
+	color: #ffffff;
+}
+
+.pagination-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.pagination-item a {
+	font-size: 16px;
+	line-height: 18px;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #000000;
+}
+
+.pagination-item a:hover {
+	
+}
+
+.pagination-item a:active {
+	color: rgba(255, 255, 255, 0.3);
+}
+
