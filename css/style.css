@@ -195,9 +195,9 @@ body {
     opacity: 1;
 }
 
-#btn-1:checked ~ .slider-gallery .slide1,
-#btn-2:checked ~ .slider-gallery .slide2,
-#btn-3:checked ~ .slider-gallery .slide3 {
+#btn-1:checked ~ .slide-wrapper .slide1,
+#btn-2:checked ~ .slide-wrapper .slide2,
+#btn-3:checked ~ .slide-wrapper .slide3 {
 	display: block;
 }
 
@@ -338,6 +338,7 @@ body {
 	background-color: #ffffff;
 	border-radius: 50%;
 	cursor: pointer;
+	outline: none;
 }
 
 .slide-controls label::after {
@@ -354,6 +355,12 @@ body {
 	background-color: #ffffff;
 	border: 2px solid rgba(0, 0, 0, 0.4);
 	border-radius: 50%;
+}
+
+.slide-controls label:focus {
+	box-shadow: 
+		0 0 0 3px #fff,
+		0 0 6px 6px #d13b3f;
 }
 
 
@@ -502,23 +509,26 @@ body {
 	text-transform: uppercase;
 }
 
+.filter-grid ul,
+.filter-features ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
 .filter-cost label {
 	font-size: 16px;
 	line-height: 22px;
 	color: #283136;
 }
 
-.filter-grid label {
+.filter-grid label,
+.filter-features label {
 	font-size: 16px;
 	line-height: 20px;
 	color: #283136;
 }
 
-.filter-grid label {
-	font-size: 16px;
-	line-height: 20px;
-	color: #283136;
-}
 
 .btn-filter {
 	box-sizing: border-box;

@@ -50,12 +50,12 @@
                     	</div>
 						
                     	<div class="output-cost">
-                    	    <label>
+                    	    <label aria-label="Минимальная стоимость">
 								от
 								<input type="text" id="min-cost" name="min-cost" value="0" >
 							</label>
 							
-							<label>
+							<label aria-label="Максимальная стоимость">
 								до
 								<input type="text" id="max-cost" name="max-cost" value="15000">
 							</label> 
@@ -67,13 +67,20 @@
 						<legend class="filter-title">
 							Сетка:
 						</legend>
-						
-                    	<input id="radio-adap" name="grid" type="radio" value="adaptive" checked>
-                    	<label for="radio-adap">Адаптивная</label>
-                    	<input id="radio-fix" name="grid" type="radio" value="fix">
-                    	<label for="radio-fix">Фиксированная</label>
-                    	<input id="radio-elastic" name="grid" type="radio" value="elastic">
-                    	<label for="radio-elastic">Резиновая</label>
+						<ul>
+							<li class="filter-option">
+								<input id="radio-adap" name="grid" type="radio" value="adaptive" checked>
+								<label for="radio-adap">Адаптивная</label>
+							</li>
+							<li class="filter-option">
+								<input id="radio-fix" name="grid" type="radio" value="fix">
+								<label for="radio-fix">Фиксированная</label>
+							</li>
+							<li class="filter-option">
+								<input id="radio-elastic" name="grid" type="radio" value="elastic">
+								<label for="radio-elastic">Резиновая</label>
+							</li>
+						</ul>	
 					</fieldset>
                     
 					<fieldset class="filter-features">
@@ -81,16 +88,28 @@
 							Особенности:
 						</legend>
 						
-                    	<input id="check-slider" name="slider" type="checkbox" checked>
-                    	<label for="check-slider">Слайдер</label>
-                    	<input id="check-feature" name="feature" type="checkbox">
-                    	<label for="check-feature">Блок преимуществ</label>
-                    	<input id="check-news" name="news" type="checkbox" checked>
-                    	<label for="check-news">Новости</label>
-                    	<input id="check-galery" name="galery" type="checkbox">
-                    	<label for="check-galery">Галерея</label>
-                    	<input id="check-basket" name="basket" type="checkbox">
-                    	<label for="check-basket">Корзина</label>
+						<ul>
+							<li class="filter-option">
+								<input id="check-slider" name="slider" type="checkbox" checked>
+								<label for="check-slider">Слайдер</label>
+							</li>
+							<li class="filter-option">
+								<input id="check-feature" name="feature" type="checkbox">
+								<label for="check-feature">Блок преимуществ</label>
+							</li>
+							<li class="filter-option">
+								<input id="check-news" name="news" type="checkbox" checked>
+								<label for="check-news">Новости</label>
+							</li>
+							<li class="filter-option">
+								<input id="check-galery" name="galery" type="checkbox">
+								<label for="check-galery">Галерея</label>
+							</li>
+							<li class="filter-option">
+								<input id="check-basket" name="basket" type="checkbox">
+								<label for="check-basket">Корзина</label>
+							</li>
+						</ul>
 					</fieldset>
                     
                     <button class="btn btn-filter" type="submit">Показать</button>
