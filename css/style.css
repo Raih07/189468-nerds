@@ -176,9 +176,12 @@ body {
 	border-bottom: 2px solid #fb565a;
 }
 
+/********Слайдер******/
+
 .slider-gallery {
 	min-height: 430px;
 	position: relative;
+	background-color: #eeeeee;
 }
 
 .slider-gallery input[type=radio] {
@@ -247,7 +250,77 @@ body {
 	width: 208px;	
 }
 
+
+.slide-controls {
+	position: absolute;
+	bottom: 96px;
+	width: 100%;
+	text-align: center;
+	font-size: 0;
+	background-color: coral;
+}
+
+.slide-controls label {
+	display: inline-block;
+	box-sizing: border-box;
+	position: relative;
+	vertical-align: middle;
+	margin-right: 17px;
+	width: 18px;
+	height: 18px;
+	background-color: #ffffff;
+	border-radius: 50%;
+	cursor: pointer;
+	outline: none;
+}
+
+.slide-controls label::after {
+	content: "";
+	position: absolute;
+	box-sizing: border-box;
+	top: 50%;
+	margin-top: -4px;
+	left: 50%;
+	margin-left: -4px;
+	opacity: 0;
+	width: 8px;
+	height: 8px;
+	background-color: #ffffff;
+	border: 2px solid rgba(0, 0, 0, 0.4);
+	border-radius: 50%;
+}
+
+.slide-controls label:focus {
+	box-shadow: 
+		0 0 0 3px #fff,
+		0 0 6px 6px #d13b3f;
+}
+
+/*******Наши услуги******/
+
+.services {
+    padding-top: 80px;
+    padding-bottom: 80px;
+	border-bottom: 2px solid #eeeeee;
+}
+
+.services-list {
+	padding: 0;
+	list-style: none;
+	display: flex;
+}
+
+.service-item {
+	display: flex;
+	flex-direction: column;
+	width: 300px;
+	margin-right: 100px;
+}
+
 .service-title {
+	margin: 0;
+	margin-top: 24px;
+	margin-bottom: 16px;
 	font-weight: bold;
     font-size: 24px;
     line-height: 30px;
@@ -255,8 +328,15 @@ body {
 	text-transform: uppercase;
 }
 
+.service-item p {
+	margin: 0;
+	margin-bottom: 33px;
+	width: 260px;
+}
+
 .services .btn {
 	width: 128px;
+	margin-top: auto;
 }
 
 .service-site-btn {
@@ -314,75 +394,92 @@ body {
 }
 
 
+/*******О компании******/
 
-
-
-
-.slide-controls {
-	position: absolute;
-	bottom: 96px;
-	width: 100%;
-	text-align: center;
-	font-size: 0;
-	background-color: coral;
+.about-company {
+	padding-top: 40px;
+	padding-bottom: 50px;
+	display: flex;
+	justify-content: space-between;
+	outline: 2px solid green;
 }
 
-.slide-controls label {
-	display: inline-block;
-	box-sizing: border-box;
-	position: relative;
-	vertical-align: middle;
-	margin-right: 17px;
-	width: 18px;
-	height: 18px;
-	background-color: #ffffff;
-	border-radius: 50%;
-	cursor: pointer;
-	outline: none;
+.about-descript {
+	width: 680px;
+	padding-top: 32px;
+	outline: 1px solid black;
 }
-
-.slide-controls label::after {
-	content: "";
-	position: absolute;
-	box-sizing: border-box;
-	top: 50%;
-	margin-top: -4px;
-	left: 50%;
-	margin-left: -4px;
-	opacity: 0;
-	width: 8px;
-	height: 8px;
-	background-color: #ffffff;
-	border: 2px solid rgba(0, 0, 0, 0.4);
-	border-radius: 50%;
-}
-
-.slide-controls label:focus {
-	box-shadow: 
-		0 0 0 3px #fff,
-		0 0 6px 6px #d13b3f;
-}
-
-
-
-
-
-
 
 .about-company-title {
+	display: block;
+	margin: 0;
+	margin-bottom: 34px;
 	font-weight: 500;
     font-size: 45px;
     line-height: 45px;
     color: #000000;
 }
 
+.about-descript p {
+	margin: 0;
+	margin-bottom: 39px;
+}
+
 .about-company-subtitle {
+	margin: 0;
+	margin-bottom: 24px;
 	font-size: 16px;
 	color: #000000;
 	text-transform: uppercase;
 }
 
+.about-descript .about-descript-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.about-descript-list li {
+	position: relative;
+	margin-bottom: 24px;
+	padding-left: 36px;
+}
+
+.about-descript-list li::before {
+	content: "";
+	position: absolute;
+	left: 1px;
+	top: 50%;
+	width: 25px;
+	height: 2px;
+	background-color: #fb565a;
+}
+
+.about-stat {
+	width: 360px;
+	outline: 1px solid blue;
+}
+
+.about-stat-subtitle {
+	display: block;
+	margin-top: 29px;
+	margin-bottom: 29px;
+	text-align: center;
+	font-size: 16px;
+	color: #000000;
+	text-transform: uppercase;
+}
+
+.stat-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
 .stat-item {
+	display: inline-block;
+	width: 100px;
+	margin-right: 15px;
 	font-weight: bold;
 	font-size: 45px;
 	line-height: 50px; /*подбор*/
@@ -395,11 +492,14 @@ body {
 
 .stat-item .note {
 	display: block;
+	margin-top: 17px;
 	font-weight: normal;
 	font-size: 16px;
 	line-height: 18px;
 	color: #283136;	
 }
+
+
 
 .contacts h3 {
 	font-weight: bold;
