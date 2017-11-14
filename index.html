@@ -3,30 +3,42 @@
     <head>
         <title>HTML Academy: Нёрдс</title>
         <meta charset="utf-8">
+		<link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
         <header class="main-header">
 			<div class="container">
-            <a class="header-logo">
-                <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип студии Nerd's">
-            </a>
-            <nav class="main-nav" aria-label="Навигация по сайту">
-                <ul class="site-nav">
-                    <li><a href="#" class="active">Студия</a></li>
-                    <li><a href="#">Клиенты</a></li>
-                    <li><a href="catalog.html">Магазин</a></li>
-                    <li><a href="#">Контакты</a></li>
-                </ul>
-            </nav>
-            <a class="basket active" href="#">Корзина</a>
-		</div>
+				<div class="header-row">
+					<div class="column header-left">
+						<a class="header-logo">
+                			<img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип студии Nerd's">
+            			</a>
+					</div>
+					<div class="column header-center">
+						<nav class="main-nav" aria-label="Навигация по сайту">
+                			<ul class="site-nav">
+                    			<li><a href="#" class="active">Студия</a></li>
+                    			<li><a href="#">Клиенты</a></li>
+                    			<li><a href="catalog.html">Магазин</a></li>
+                    			<li><a href="#">Контакты</a></li>
+                			</ul>
+            			</nav>
+					</div>
+					<div class="column header-right">
+						<a class="basket active" href="#">Корзина</a>
+					</div>
+				
+				</div>
+            </div>
         </header>
         
-        <main class="container">
-			<div class="container">
+        <main>
+			
             <h1 class="visually-hidden">Студия Nerds</h1>
-            <section class="slider-gallery">
+            <section class="slider-gallery container">
+				
+					
                 <h2 class="visually-hidden">Слайды</h2>
                 <input type="radio" name="toggle" id="btn-1" classs="visually-hidden" checked>
                 <input type="radio" name="toggle" id="btn-2" classs="visually-hidden">
@@ -39,14 +51,11 @@
                 
                 <div class="slide-wrapper">
                     <!--Первый слайд-->
-                    <div class="slide slide1" id="sl"><!--пусть будет обычный div, article мне кажется сюда тоже не подходит-->
+                    <div class="slide slide1"><!--пусть будет обычный div, article мне кажется сюда тоже не подходит-->
                         <div class="description-slide">
                             <b class="slide-title">Долго, дорого, скрупулезно.</b>
                             <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
                             <a class="btn" href="#">Узнать больше</a>
-                        </div>
-                        <div class="image-slide">       <!--может быть это фоновое изобр-->
-                            <img src="img/slide1.png" width="698" height="413" alt="">
                         </div>
                     </div>
                     <!--Второй слайд-->
@@ -56,9 +65,7 @@
                             <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
                             <a class="btn" href="#">Узнать больше</a>
                         </div>
-                        <div class="image-slide">
-                            <img src="img/slide2.png" width="663" height="430" alt="">
-                        </div>
+                        
                     </div>
                     <!--Третий слайд-->
                     <div class="slide slide3">
@@ -67,16 +74,15 @@
                             <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
                             <a class="btn" href="#">Узнать больше</a>
                         </div>
-                        <div class="image-slide">
-                            <img src="img/slide3.png" width="759" height="411" alt="">
-                        </div>
+                        
                     </div>
                     
-                </div> 
+                </div>
+				
             </section>
-			</div>
+			
         
-            <section class="services">
+            <section class="services container">
                 <h2 class="visually-hidden">Наши услуги</h2>
                 <ul class="services-list container">
                     <li class="service-item service-site">
@@ -137,13 +143,13 @@
             <section class="logos">
                 <h2 class="visually-hidden">Наши партнеры</h2>
                 <ul class="logos-list">   
-                    <li class="logo-item academy">
+                    <li class="logo-item">
                         <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-1.png" width="199" height="68" alt="логотип html academy"></a>
                     </li>
-                    <li class="logo-item borodinski">
+                    <li class="logo-item">
                         <a href="#"><img src="img/logo-2.png" width="209" height="90" alt="логотип barbershop borodinski"></a>
                     </li>
-                    <li class="logo-item pink">
+                    <li class="logo-item">
                         <a href="#"><img src="img/logo-3.png" width="185" height="52" alt="логотип pink"></a>
                     </li>
                     <li class="logo-item mishka">
@@ -156,7 +162,7 @@
         <footer class="main-footer">
             <section class="card-and-contacts">
                 <iframe></iframe>
-                <img src="img/map.png" width="1440" height="416" alt="Карта расположения офиса компании">
+           <!--     <img src="img/map.png" width="1440" height="416" alt="Карта расположения офиса компании">-->
                 <img src="img/map-marker.png" width="231" height="190" alt="Указатель на карте">
                 <div class="container">
                     <div class="contacts">
