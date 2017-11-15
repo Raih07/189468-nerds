@@ -7,23 +7,32 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <header class="main-header">
+		<header class="main-header">
 			<div class="container">
-            <a class="header-logo" href="index.html">
-                <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип студии Nerd's">
-            </a>
-            <nav class="main-nav" aria-label="Навигация по сайту">
-                <ul class="site-nav">
-                    <li><a href="#">Студия</a></li>
-                    <li><a href="#">Клиенты</a></li>
-                    <li><a href="catalog.html" class="active">Магазин</a></li>
-                    <li><a href="#">Контакты</a></li>
-                </ul>
-            </nav>
-            <a class="basket active" href="#">Корзина</a>
-		</div>
+				<div class="header-row">
+					<div class="column header-left">
+						<a class="header-logo" href="index.html">
+                			<img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип студии Nerd's">
+            			</a>
+					</div>
+					<div class="column header-center">
+						<nav class="main-nav" aria-label="Навигация по сайту">
+                			<ul class="site-nav">
+                    			<li><a href="#" class="active">Студия</a></li>
+                    			<li><a href="#">Клиенты</a></li>
+                    			<li><a href="catalog.html" class="active">Магазин</a></li>
+                    			<li><a href="#">Контакты</a></li>
+                			</ul>
+            			</nav>
+					</div>
+					<div class="column header-right">
+						<a class="basket active" href="#">Корзина</a>
+					</div>
+				
+				</div>
+            </div>
         </header>
-        
+      
         <main>
 			
             <h1 class="page-title-catalog">
@@ -70,15 +79,15 @@
 						</legend>
 						<ul>
 							<li class="filter-option">
-								<input id="radio-adap" name="grid" type="radio" value="adaptive" checked>
+								<input id="radio-adap" name="grid-type" type="radio" value="adaptive" checked>
 								<label for="radio-adap">Адаптивная</label>
 							</li>
 							<li class="filter-option">
-								<input id="radio-fix" name="grid" type="radio" value="fix">
+								<input id="radio-fix" name="grid-type" type="radio" value="fix">
 								<label for="radio-fix">Фиксированная</label>
 							</li>
 							<li class="filter-option">
-								<input id="radio-elastic" name="grid" type="radio" value="elastic">
+								<input id="radio-elastic" name="grid-type" type="radio" value="elastic">
 								<label for="radio-elastic">Резиновая</label>
 							</li>
 						</ul>	
@@ -195,13 +204,11 @@
         
         <footer class="main-footer">
             <section class="card-and-contacts">
-                <iframe></iframe>
-                <img src="img/map.png" width="1440" height="416" alt="Карта расположения офиса компании">
-                <img src="img/map-marker.png" width="231" height="190" alt="Указатель на карте">
+                <!--<iframe></iframe>-->
                 <div class="container">
                     <div class="contacts">
                         <h3>NЁRDS DESIGN STUDIO</h3>
-                        <p>191186, Санкт-Петербург,
+                        <p>191186, Санкт-Петербург,<br>
                         ул. Б. Конюшенная, д. 19/8</p>
                         <p>тел. +7 (812) 275-75-75</p>
                         <a class="btn btn-wtite-us" href="#">Напишите нам</a>
@@ -209,7 +216,6 @@
                 </div>  
             </section>
             
-             
             <div class="footer-bottom">
                 <div class="container">
                     <div class="footer-social">
@@ -225,9 +231,10 @@
             </div> 
         </footer>
         
-        <div class="modal-write-us">
+		
+        <div class="modal-write-us" id="modal">
             <h2>Напишите нам</h2>
-            <!-- Здесь будет форма -->
+            
             <form class="feedback-form" action="" method="post">
                 <div class="wrapper">
                     <div class="feedback-form-group feedback-form-name">
@@ -236,7 +243,7 @@
                     </div>
                     <div class="feedback-form-group feedback-form-email">
                         <label for="feedback-form-email">Ваш e-mail:</label>
-                        <input type="text" name="email" id="feedback-form-email" placeholder="Для отправки ответа">
+                        <input type="email" name="email" id="feedback-form-email" placeholder="Для отправки ответа">
                     </div>
                 </div>
                 <div class="feedback-form-group">
@@ -245,10 +252,11 @@
                 </div>
                 <button class="btn" type="submit">Отправить</button>
             </form>
-            <button class="modal-close" type="button" aria-label="закрыть"></button>
+            <button class="modal-close" id="modal_close" type="button" aria-label="закрыть"></button>
         </div>
       
         <!--
         <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>-->
+		<!--<script src="js/script.js"></script>-->
     </body>
 </html>
