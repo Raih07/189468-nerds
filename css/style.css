@@ -1,9 +1,10 @@
+/*
 @font-face {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   src: local("Roboto"),       
-       url("../fonts/web/roboto.woff2") format("woff2");
+       url("../fonts/web/roboto-regular-webfont.woff2") format("woff2");
       
 }
 
@@ -12,7 +13,7 @@
   font-style: normal;
   font-weight: 500;
   src: local("Roboto Medium"),       
-       url("../fonts/web/robotomedium.woff2") format("woff2");
+       url("../fonts/web/roboto-medium-webfont.woff2") format("woff2");
 }
 
 @font-face {
@@ -20,8 +21,8 @@
   font-style: normal;
   font-weight: 700;
   src: local("Roboto Bold"),       
-       url("../fonts/web/robotobold.woff2") format("woff2");
-}
+       url("../fonts/web/roboto-bold-webfont.woff2") format("woff2");
+}*/
 
 body {
     min-width: 1160px;
@@ -29,6 +30,7 @@ body {
     padding: 0;
     font-size: 16px;
     line-height: 24px;
+	font-weight: 400;
     font-family: "Roboto", "Arial", sans-serif;
     color: #283136;
     background-color: white;
@@ -134,7 +136,7 @@ body {
 .main-nav a {
 	display: inline-block;
 	padding: 0;/*22*/
-	padding-bottom: 3px;
+	padding-bottom: 4px;
 	padding-top: 5px;
 	font-weight: 500;
     text-decoration: none;
@@ -215,9 +217,10 @@ body {
 
 .description-slide {
 	width: 530px;
-	padding-top: 69px;
+	padding-top: 66px;
 	outline: 1px solid blue;
 }
+
 .slider-gallery input[type=radio] {
 	display: none;
 }
@@ -256,7 +259,7 @@ body {
 
 .slide .slide-title {
 	display: block;
-	margin-bottom: 25px;
+	margin-bottom: 28px;
 	font-weight: 500;
     font-size: 55px;
     line-height: 55px;
@@ -310,11 +313,12 @@ body {
 .slide-controls {
 	position: absolute;
 	bottom: 96px;
+	left: 0;
 	width: 100%;
 	text-align: center;
 	font-size: 0;
 	line-height: 0;
-	bаackground-color: coral;
+	bbackground-color: coral;
 }
 
 .slide-controls label {
@@ -388,8 +392,8 @@ body {
 
 .service-title {
 	margin: 0;
-	margin-top: 27px;
-	margin-bottom: 13px;
+	margin-top: 24px;
+	margin-bottom: 16px;
 	font-weight: bold;
     font-size: 24px;
     line-height: 30px;
@@ -475,14 +479,14 @@ body {
 
 .about-descript {
 	width: 680px;
-	padding-top: 34px;
+	padding-top: 32px;
 	outline: 1px solid black;
 }
 
 .about-company-title {
 	display: block;
 	margin: 0;
-	margin-bottom: 32px;
+	margin-bottom: 34px;
 	font-weight: 500;
     font-size: 45px;
     line-height: 45px;
@@ -491,12 +495,12 @@ body {
 
 .about-descript p {
 	margin: 0;
-	margin-bottom: 41px;
+	margin-bottom: 39px;
 }
 
 .about-company-subtitle {
 	margin: 0;
-	margin-bottom: 22px;
+	margin-bottom: 24px;
 	font-size: 16px;
 	color: #000000;
 	text-transform: uppercase;
@@ -529,12 +533,17 @@ body {
 	outline: 1px solid blue;
 }
 
+.about-stat img {
+	width: 360px;
+	height: 208px;
+}
+
 .about-stat-subtitle {
 	display: block;
 	margin-top: 29px;
 	margin-bottom: 38px;
 	text-align: center;
-	font-size: 16px;
+	font-weight: bold;
 	color: #000000;
 	text-transform: uppercase;
 }
@@ -556,7 +565,9 @@ body {
 }
 
 .stat-item sup {
+	font-weight: normal;
 	font-size: 26px;
+	text-transform: top;
 }
 
 .stat-item .note {
@@ -604,7 +615,7 @@ body {
   margin-top: -6px;
   width: 2px;
   height: 52px;
-  background-color: red;
+  background-color: red; /*#eeeeee*/
 }
 
 .logo-item:first-child {
@@ -658,13 +669,13 @@ body {
 	align-items: flex-start;
 	width: 319px;
 	min-height: 308px;
-	padding: 47px 50px;
+	padding: 48px 50px 47px;
 	background-color: #ffffff;
 }
 
 .contacts h3 {
 	margin: 0;
-	margin-bottom: 24px;
+	margin-bottom: 23px;
 	font-weight: bold;
 	font-size: 18px;
 	line-height: 30px;
@@ -793,11 +804,11 @@ body {
 /******Модальное окно******/
 
 .modal-write-us {
-	display: none;
+	/*display: none;*/
 	position: fixed;
 	left: 50%;
 	top: 50%;
-	transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%) scale(0);
 	box-sizing: border-box;
 	width: 960px;
 	min-height: 590px;
@@ -808,10 +819,13 @@ body {
 	color: #000000;
 	background-color: #ffffff;
 	box-shadow: 0 20px 40px rgba(0, 1, 1, 0.75);
+	
 }
 
 .modal-write-us.open {
-	display: block;
+	/*display: block;*/
+	transform: scale(1);
+	transition: transform 5s ease;
 }
 
 .modal-write-us h2 {
@@ -853,7 +867,7 @@ body {
 	padding: 10px 13px;
 	font: inherit;
 	line-height: 18px;
-	color: #444444;		/* как определить кауой нужжен цвет*/
+	color: #444444;		/* как определить какой нужжен цвет*/
 	border: 2px solid #d7dcde;
 	border-radius: 2px;
 }
@@ -886,15 +900,14 @@ body {
 }
 
 .modal-write-us .modal-close {
-	content: "";
 	position: absolute;
 	top: 78px;
 	right: 90px;
-	border: none;
 	display: block;
 	padding: 0;
 	height: 21px;
 	width: 21px;
+	border: none;
 	background-image: url("../img/close-cross.svg");
 	opacity: 0.3;
 	background-repeat: no-repeat;
