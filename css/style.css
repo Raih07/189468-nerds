@@ -1,10 +1,26 @@
 @font-face {
-    font-family: "Roboto";
-    src:
-        local("Roboto Regular"),
-        local("Roboto-Regular"),
-        url("../fonts/web/roboto.woff2") format("woff2");
-    
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Roboto"),       
+       url("../fonts/web/roboto.woff2") format("woff2");
+      
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  src: local("Roboto Medium"),       
+       url("../fonts/web/robotomedium.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Roboto Bold"),       
+       url("../fonts/web/robotobold.woff2") format("woff2");
 }
 
 body {
@@ -118,7 +134,7 @@ body {
 .main-nav a {
 	display: inline-block;
 	padding: 0;/*22*/
-	padding-bottom: 5px;
+	padding-bottom: 3px;
 	padding-top: 5px;
 	font-weight: 500;
     text-decoration: none;
@@ -199,7 +215,7 @@ body {
 
 .description-slide {
 	width: 530px;
-	padding-top: 66px;
+	padding-top: 69px;
 	outline: 1px solid blue;
 }
 .slider-gallery input[type=radio] {
@@ -240,7 +256,7 @@ body {
 
 .slide .slide-title {
 	display: block;
-	margin-bottom: 28px;
+	margin-bottom: 25px;
 	font-weight: 500;
     font-size: 55px;
     line-height: 55px;
@@ -298,7 +314,7 @@ body {
 	text-align: center;
 	font-size: 0;
 	line-height: 0;
-	background-color: coral;
+	bаackground-color: coral;
 }
 
 .slide-controls label {
@@ -324,8 +340,8 @@ body {
 	content: "";
 	position: absolute;
 	top: 50%;
-	margin-top: -4px;
 	left: 50%;
+	margin-top: -4px;
 	margin-left: -4px;
 	box-sizing: border-box;
 	width: 8px;
@@ -372,8 +388,8 @@ body {
 
 .service-title {
 	margin: 0;
-	margin-top: 24px;
-	margin-bottom: 16px;
+	margin-top: 27px;
+	margin-bottom: 13px;
 	font-weight: bold;
     font-size: 24px;
     line-height: 30px;
@@ -459,14 +475,14 @@ body {
 
 .about-descript {
 	width: 680px;
-	padding-top: 32px;
+	padding-top: 34px;
 	outline: 1px solid black;
 }
 
 .about-company-title {
 	display: block;
 	margin: 0;
-	margin-bottom: 34px;
+	margin-bottom: 32px;
 	font-weight: 500;
     font-size: 45px;
     line-height: 45px;
@@ -475,12 +491,12 @@ body {
 
 .about-descript p {
 	margin: 0;
-	margin-bottom: 39px;
+	margin-bottom: 41px;
 }
 
 .about-company-subtitle {
 	margin: 0;
-	margin-bottom: 24px;
+	margin-bottom: 22px;
 	font-size: 16px;
 	color: #000000;
 	text-transform: uppercase;
