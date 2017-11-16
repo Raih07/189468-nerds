@@ -824,7 +824,7 @@ body {
 
 .modal-write-us.open {
 	/*display: block;*/
-	transform: scale(1);
+	transform: translate(-50%, -50%) scale(1);
 	transition: transform 5s ease;
 }
 
