@@ -3,8 +3,9 @@
     <head>
         <title>Каталог</title>
         <meta charset="utf-8">
-		<link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/style.css">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+		<link href="css/normalize.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
 		<header class="main-header">
@@ -18,7 +19,7 @@
 					<div class="column header-center">
 						<nav class="main-nav" aria-label="Навигация по сайту">
                 			<ul class="site-nav">
-                    			<li><a href="#" class="active">Студия</a></li>
+                    			<li><a href="#">Студия</a></li>
                     			<li><a href="#">Клиенты</a></li>
                     			<li><a href="catalog.html" class="active">Магазин</a></li>
                     			<li><a href="#">Контакты</a></li>
@@ -41,7 +42,7 @@
 				</div>
 			</h1>
 			
-			<div class="container">
+			<div class="filter-and-catalog container">
 			
             <section class="filters">
                 <h2 class="visually-hidden">Фильтр шаблонов</h2>
@@ -54,8 +55,9 @@
 						
 						<div class="filter-cost-slider">
                         	<div class="filter-scale">
-                        	    <div class="filter-thumb filter-thumb-min" tabindex="0" aria-label="Ползунок минимальной суммы"></div>
-                        	    <div class="filter-thumb filter-thumb-max" tabindex="0" aria-label="Ползунок максимальной суммы"></div>
+								<div class="scale-active"></div>
+                        	    <button class="filter-thumb filter-thumb-min" tabindex="0" aria-label="Ползунок минимальной суммы"></button>
+                        	    <button class="filter-thumb filter-thumb-max" tabindex="0" aria-label="Ползунок максимальной суммы"></button>
                         	</div>
                     	</div>
 						
@@ -79,15 +81,15 @@
 						</legend>
 						<ul>
 							<li class="filter-option">
-								<input id="radio-adap" name="grid-type" type="radio" value="adaptive" checked>
+								<input class="filter-input visually-hidden" id="radio-adap" name="grid-type" type="radio" value="adaptive" checked>
 								<label for="radio-adap">Адаптивная</label>
 							</li>
 							<li class="filter-option">
-								<input id="radio-fix" name="grid-type" type="radio" value="fix">
+								<input class="filter-input visually-hidden" id="radio-fix" name="grid-type" type="radio" value="fix">
 								<label for="radio-fix">Фиксированная</label>
 							</li>
 							<li class="filter-option">
-								<input id="radio-elastic" name="grid-type" type="radio" value="elastic">
+								<input class="filter-input visually-hidden" id="radio-elastic" name="grid-type" type="radio" value="elastic">
 								<label for="radio-elastic">Резиновая</label>
 							</li>
 						</ul>	
@@ -100,23 +102,23 @@
 						
 						<ul>
 							<li class="filter-option">
-								<input id="check-slider" name="slider" type="checkbox" checked>
+								<input class="filter-input visually-hidden" id="check-slider" name="slider" type="checkbox" checked>
 								<label for="check-slider">Слайдер</label>
 							</li>
 							<li class="filter-option">
-								<input id="check-feature" name="feature" type="checkbox">
+								<input class="filter-input visually-hidden" id="check-feature" name="feature" type="checkbox">
 								<label for="check-feature">Блок преимуществ</label>
 							</li>
 							<li class="filter-option">
-								<input id="check-news" name="news" type="checkbox" checked>
+								<input class="filter-input visually-hidden" id="check-news" name="news" type="checkbox" checked>
 								<label for="check-news">Новости</label>
 							</li>
 							<li class="filter-option">
-								<input id="check-galery" name="galery" type="checkbox">
+								<input class="filter-input visually-hidden" id="check-galery" name="galery" type="checkbox">
 								<label for="check-galery">Галерея</label>
 							</li>
 							<li class="filter-option">
-								<input id="check-basket" name="basket" type="checkbox">
+								<input class="filter-input visually-hidden" id="check-basket" name="basket" type="checkbox">
 								<label for="check-basket">Корзина</label>
 							</li>
 						</ul>
