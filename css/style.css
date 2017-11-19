@@ -1391,24 +1391,23 @@ a.sort-type-active {
 	display: inline-block;
 	min-height: 50px;
 	min-width: 50px;
-	padding: 16px 20.5px;
+	padding: 13px 17.5px;
 	
 	text-align: center;
 	vertical-align: middle;
-	
 	font-size: 16px;
 	line-height: 18px;
 	text-transform: uppercase;
 	text-decoration: none;
 	color: #000000;
-	
-	/*border: 3px solid transparent;*/
+	background-clip: border-box;
+	border: 3px solid transparent;
 	border-radius: 2px;
 	background-color: #eeeeee;
 }
 
 .next a {
-	padding: 16px 78.5px;
+	padding: 13px 75.5px;
 }
 
 .pagination-item a:hover {
