@@ -221,9 +221,10 @@ body {
 	outline: 1px solid blue;
 }
 
+/*
 .slider-gallery input[type=radio] {
 	display: none;
-}
+}*/
 
 .slide1, .slide2, .slide3 {
 	display: none;
@@ -356,10 +357,12 @@ body {
 	border-radius: 50%;
 }
 
-.slide-controls label:focus {
-	box-shadow: 
-		0 0 0 3px #fff,
-		0 0 6px 6px #d13b3f;
+#btn-1:focus ~ .slide-controls label[for="btn-1"],
+#btn-2:focus ~ .slide-controls label[for="btn-2"],
+#btn-3:focus ~ .slide-controls label[for="btn-3"] {
+    box-shadow: 
+		0 0 0 3px #d13b3f,
+		0 0 6px 6px #ffffff;
 }
 
 /*******Наши услуги******/
@@ -977,8 +980,8 @@ body {
 	font-weight: bold;
 	font-size: 18px;
 	line-height: 30px;
-	color: #000000;
 	text-transform: uppercase;
+	color: #000000;
 }
 
 .filter-cost .filter-title {
@@ -1063,7 +1066,7 @@ body {
 .output-cost input {
 	box-sizing: border-box;
 	width: 80px;
-	padding: 8px 0;
+	padding: 8px 15px;
 	margin-left: 8px;
 	text-align: center;
 	font: inherit;
@@ -1149,9 +1152,9 @@ body {
 
 .btn-filter {
 	box-sizing: border-box;
-	background-color: #eeeeee;
 	width: 100%;
 	color: #000000;
+	background-color: #eeeeee;
 }
 
 .btn-filter:hover {
@@ -1187,8 +1190,8 @@ body {
 	font-weight: bold;
 	font-size: 18px;
 	line-height: 18px;
-	color: #000000;
 	text-transform: uppercase;
+	color: #000000;
 	
 	background-color: beige;
 }
@@ -1272,6 +1275,7 @@ a.sort-type-active {
 
 .catalog-list {
 	margin: 0;
+	margin-bottom: 27px;
 	padding: 0;
 	list-style: none;
 	display: flex;
@@ -1284,6 +1288,9 @@ a.sort-type-active {
 	box-sizing: border-box;
 	height: 616px;
 	width: 360px;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	overflow: hidden;
 	margin-bottom: 33px;
 }
 
@@ -1323,6 +1330,8 @@ a.sort-type-active {
 	left: 0;
 	box-sizing: border-box;
 	width: 100%;
+	min-height: 30%;
+	max-height: 50%;
 	padding: 26px 60px 43px;
 	text-align: center;
 	background-color: #eeeeee;
@@ -1330,7 +1339,7 @@ a.sort-type-active {
 
 .catalog-tittle {
 	display: block;
-	margin-bottom: 16px;
+	margin-bottom: 15px;
 	font-weight: bold;
 	line-height: 30px;
 	text-transform: uppercase;
@@ -1347,11 +1356,17 @@ a.sort-type-active {
 	color: #666666;
 	line-height: 18px;
 	margin: 0;
-	margin-bottom: 30px;
+	margin-bottom: 31px;
+	max-height: 113px;
+	overflow: auto;
+}
+
+.Sedona-item p,
+.Mishka-item p {
+	padding: 0 17px;
 }
 
 .btn-buy {
-	
 	width: 168px;
 }
 
@@ -1362,31 +1377,57 @@ a.sort-type-active {
 .pagination-list {
 	margin: 0;
 	padding: 0;
+	font-size: 0;
 	list-style: none;
 }
 
+.pagination-list li {
+	display: inline-block;
+	margin-right: 11px;
+}
+
 .pagination-item a {
+	box-sizing: border-box;
+	display: inline-block;
+	min-height: 50px;
+	min-width: 50px;
+	padding: 16px 20.5px;
+	
+	text-align: center;
+	vertical-align: middle;
+	
 	font-size: 16px;
 	line-height: 18px;
 	text-transform: uppercase;
 	text-decoration: none;
 	color: #000000;
+	
+	/*border: 3px solid transparent;*/
+	border-radius: 2px;
+	background-color: #eeeeee;
+}
+
+.next a {
+	padding: 16px 78.5px;
 }
 
 .pagination-item a:hover {
-	
+	background-color: #dfdfdf;
 }
 
 .pagination-item a:active {
 	color: rgba(255, 255, 255, 0.3);
+	background-color: #d5d5d5;
+	box-shadow: inset 0 3px rgba(0, 1, 1, 0.1);
 }
 
-.pagination-item-current a {
-	color: #000000;
-}
-
+.pagination-item-current a,
 .pagination-item-current a:hover,
 .pagination-item-current a:active,
 .pagination-item-current a:focus {
+	padding: 13px 17.5px;
 	color: #000000;
+	background-color: #ffffff;
+	border: 3px solid #dbdbdb;
+	box-shadow: none;
 }
