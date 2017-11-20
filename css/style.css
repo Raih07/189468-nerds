@@ -1132,7 +1132,7 @@ body {
 .filter-input-checkbox:checked+label::before {
 	left: 1px;
 	top: 25%;
-	margin-top: -5px;
+	margin-top: -6px;
 	width: 27px;
 	height: 24px;
 	background-image: url(../img/checkbox-on.svg);
@@ -1286,7 +1286,7 @@ a.sort-type-active {
 .catalog-item {
 	position: relative;
 	box-sizing: border-box;
-	height: 616px;
+	min-height: 616px;
 	width: 360px;
 	border-top-left-radius: 3px;
 	border-top-right-radius: 3px;
@@ -1315,6 +1315,7 @@ a.sort-type-active {
 }
 
 .catalog-item img {
+	vertical-align: middle;
 	width: 360px;
 	height: 576px;
 }
@@ -1331,10 +1332,12 @@ a.sort-type-active {
 	box-sizing: border-box;
 	width: 100%;
 	min-height: 30%;
-	max-height: 50%;
+	max-height: 100%;
+	max-height: calc(100% - 40px);
 	padding: 26px 60px 43px;
 	text-align: center;
 	background-color: #eeeeee;
+	overflow: auto;
 }
 
 .catalog-tittle {
@@ -1350,6 +1353,9 @@ a.sort-type-active {
 .catalog-tittle h3 {
 	margin: 0;
 	font-size: 18px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 
 .description-item p {
@@ -1357,8 +1363,8 @@ a.sort-type-active {
 	line-height: 18px;
 	margin: 0;
 	margin-bottom: 31px;
-	max-height: 113px;
-	overflow: auto;
+	/*max-height: 113px;
+	overflow: auto;*/
 }
 
 .Sedona-item p,
@@ -1391,7 +1397,7 @@ a.sort-type-active {
 	display: inline-block;
 	min-height: 50px;
 	min-width: 50px;
-	padding: 13px 17.5px;
+	padding: 16px 20.5px;
 	
 	text-align: center;
 	vertical-align: middle;
@@ -1400,14 +1406,12 @@ a.sort-type-active {
 	text-transform: uppercase;
 	text-decoration: none;
 	color: #000000;
-	background-clip: border-box;
-	border: 3px solid transparent;
 	border-radius: 2px;
 	background-color: #eeeeee;
 }
 
 .next a {
-	padding: 13px 75.5px;
+	padding: 16px 78.5px;
 }
 
 .pagination-item a:hover {
