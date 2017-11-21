@@ -1,6 +1,12 @@
 function show_modal(event) {
 	modal_win.classList.add('open');
 	event.preventDefault();
+	
+	document.onkeydown = function(event) {
+        if (event.keyCode == 27) { // escape
+			close_modal(modal_win);
+        }
+      };
 }
 
 function close_modal(modal_win) {
