@@ -968,7 +968,7 @@ body {
 .filter-form fieldset {
 	border: none;
 	margin: 0;
-	margin-bottom: 53px;
+	/*margin-bottom: 53px;*/
 	margin-bottom: 27px;
 	padding: 0;
 	outline: 1px solid;
@@ -1204,7 +1204,7 @@ body {
 .sort-filter-type {
 	display: flex;
 	justify-content: flex-end;
-	fflex-basis: 65%;
+	flex-basis: 52%;
 	margin: 0;
 	padding: 0;
 	list-style: none;
