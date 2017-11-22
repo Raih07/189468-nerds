@@ -1181,17 +1181,35 @@ body {
 	width: 760px;
 }
 
+.cat-row {
+	display: flex;
+	justify-content: space-between;
+}
+
+.cat-column-left {
+	width: 34%;
+	background-color: coral;
+}
+
+.cat-column-right {
+	display: flex;
+	justify-content: flex-end;
+	width: 63%;
+	background-color: dodgerblue;
+}
+
+/*
 .sort-filter {
 	display: flex;
 	justify-content: space-between;
 	align-items: baseline;
 	padding-top: 1px;
 	margin-bottom: 54px;
-}
+}*/
 
 .sort-filter-tittle {
-	flex-basis: 35%;
-	flex-grow: 1;
+	/*flex-basis: 35%;
+	flex-grow: 1;*/
 	font-weight: bold;
 	font-size: 18px;
 	line-height: 18px;
@@ -1203,8 +1221,8 @@ body {
 
 .sort-filter-type {
 	display: flex;
-	justify-content: flex-end;
-	flex-basis: 52%;
+	/*justify-content: flex-end;*/
+	/*flex-basis: 52%;*/
 	margin: 0;
 	padding: 0;
 	list-style: none;
