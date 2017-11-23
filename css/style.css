@@ -660,12 +660,26 @@ body {
 /********Подвал*********/
 
 .card-and-contacts {
+	position: relative;
 	box-sizing: border-box;
 	min-height: 416px;
 	width: 100%;
 	padding-top: 54px;
 	padding-bottom: 54px;
 	background: url("../img/map-marker.png") no-repeat center;
+}
+
+.card-and-contacts iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 0;
+}
+
+.card-and-contacts .container {
+	z-index: 1;
 }
 
 .contacts {
@@ -677,6 +691,7 @@ body {
 	min-height: 308px;
 	padding: 48px 50px 47px;
 	background-color: #ffffff;
+	z-index: 1;
 }
 
 .contacts h3 {
@@ -1111,8 +1126,8 @@ body {
 	left: 0;
 	top: 25%;
 	margin-top: -7px;
-	width: 26px;
-	height: 26px;
+	min-width: 26px;
+	min-height: 26px;
 	background-image: url(../img/radio-off.svg);
 	background-repeat: no-repeat;
 	background-position: center;
@@ -1126,19 +1141,16 @@ body {
 	left: 1px;
 	top: 25%;
 	margin-top: -6px;
-	width: 23px;
-	height: 24px;
+	min-width: 23px;
+	min-height: 24px;
 	background-image: url(../img/checkbox-off.svg);
 	background-repeat: no-repeat;
 	background-position: center;
 }
 
 .filter-input-checkbox:checked+label::before {
-	left: 1px;
-	top: 25%;
-	margin-top: -6px;
-	width: 27px;
-	height: 24px;
+	min-width: 27px;
+	min-height: 24px;
 	background-image: url(../img/checkbox-on.svg);
 }
 
@@ -1181,19 +1193,23 @@ body {
 	width: 760px;
 }
 
-.cat-row {
+.catalog-row {
 	display: flex;
 	justify-content: space-between;
+	align-items: baseline;
+	margin-bottom: 54px;
+	padding-top: 1px;
 }
 
-.cat-column-left {
+.catalog-column-left {
 	width: 34%;
 	background-color: coral;
 }
 
-.cat-column-right {
+.catalog-column-right {
 	display: flex;
 	justify-content: flex-end;
+	align-items: center;
 	width: 63%;
 	background-color: dodgerblue;
 }
@@ -1210,6 +1226,7 @@ body {
 .sort-filter-tittle {
 	/*flex-basis: 35%;
 	flex-grow: 1;*/
+	vertical-align: center;
 	font-weight: bold;
 	font-size: 18px;
 	line-height: 18px;
@@ -1221,6 +1238,7 @@ body {
 
 .sort-filter-type {
 	display: flex;
+	flex-wrap: wrap;
 	/*justify-content: flex-end;*/
 	/*flex-basis: 52%;*/
 	margin: 0;
@@ -1262,17 +1280,18 @@ a.sort-type-active {
 .sort-controls {
 	display: flex;
 	justify-content: space-between;
+	padding-top: 1px;
 	align-items: center;
 	width: 40px;
-	margin-left: 49px;
+	margin-left: 47px;
 	font-size: 0;
 	background-color: chartreuse;
 }
 
 .sort-controls .sort-icon {
 	display: inline-block;
-	width: 11px;
-	height: 10px;
+	min-width: 11px;
+	min-height: 10px;
 	vertical-align: middle;
 	background-repeat: no-repeat;
 	background-position: center;
