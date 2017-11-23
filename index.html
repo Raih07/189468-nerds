@@ -159,13 +159,19 @@
         </main>
         
         <footer class="main-footer">
+			
+			<div id="YMapsID" style="width:100%; height:416px"></div>
+			
+			
             <section class="card-and-contacts">
+				<div class="maps" id="YMapsID"></div>
 				<!--
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424123775!2d30.32089461578749!3d59.938796869048254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1511463358894" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>-->
 				
 				<!--<iframe src="https://yandex.ru/map-widget/v1/-/CBafNDQ4oD" width="100%" height="100%" frameborder="0"></iframe>-->
 				
-				<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A9ec4dd29cf44056d7391ca5a1f3074fa590ce7f61552d535031cf645db6637af&amp;source=constructor" width="100%" height="416" frameborder="0"></iframe>
+				<!--
+				<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A9ec4dd29cf44056d7391ca5a1f3074fa590ce7f61552d535031cf645db6637af&amp;source=constructor" width="100%" height="416" frameborder="0"></iframe>-->
                 <div class="container">
                     <div class="contacts">
                         <h3>NЁRDS DESIGN STUDIO</h3>
@@ -218,5 +224,40 @@
         <!--
         <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>-->
 		<script src="js/script.js"></script>
+		<script src="https://api-maps.yandex.ru/1.1/index.xml" type="text/javascript"></script>
+		<script type="text/javascript">
+			window.onload = function () {
+			// Создает экземпляр карты и привязывает его к созданному контейнеру
+        		var map = new YMaps.Map(document.getElementById("YMapsID"));
+    
+        		// Устанавливает начальные параметры отображения карты: центр карты и коэффициент масштабирования
+        		map.setCenter(new YMaps.GeoPoint(30.321463, 59.939107), 17);	//17 - максим масштаб [1, 17]
+				
+				map.addControl(new YMaps.Zoom({noTips: true}));	//добавляет zoom и убирает подсказку к нему
+				
+				
+				// Создает стиль
+				var s = new YMaps.Style();
+				// Создает стиль значка метки
+				s.iconStyle = new YMaps.IconStyle();
+				
+				s.iconStyle.href = "img/marker.png";
+				s.iconStyle.size = new YMaps.Point(231, 190);
+				s.iconStyle.offset = new YMaps.Point(-48, -190); //сдвиг значка (в пикселах) относительно точки его позиционирования 
+				
+				
+				var placemark = new YMaps.Placemark(new YMaps.GeoPoint(30.323055, 59.938631), {style: s}); //создание указателя
+				
+				//placemark.setIconContent("Щелкни меня");	//содержимое метки
+				
+				// Устанавливает содержимое балуна
+				placemark.name = "Nerds";
+				placemark.description = "Российской Федерации";
+				
+				map.addOverlay(placemark); //добавление указателя на карту
+				
+					
+			};
+		</script>
     </body>
 </html>

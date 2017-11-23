@@ -669,7 +669,7 @@ body {
 	background: url("../img/map-marker.png") no-repeat center;
 }
 
-.card-and-contacts iframe {
+.card-and-contacts .maps {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -842,7 +842,7 @@ body {
 	color: #000000;
 	background-color: #ffffff;
 	box-shadow: 0 20px 40px rgba(0, 1, 1, 0.75);
-	z-index: 2;
+	z-index: 2000;
 }
 
 .modal-write-us.open {
