@@ -679,6 +679,7 @@ body {
 }
 
 .card-and-contacts .container {
+	position: relative;
 	z-index: 1;
 }
 
@@ -691,7 +692,6 @@ body {
 	min-height: 308px;
 	padding: 48px 50px 47px;
 	background-color: #ffffff;
-	z-index: 1;
 }
 
 .contacts h3 {
@@ -842,6 +842,7 @@ body {
 	color: #000000;
 	background-color: #ffffff;
 	box-shadow: 0 20px 40px rgba(0, 1, 1, 0.75);
+	z-index: 2;
 }
 
 .modal-write-us.open {
