@@ -257,50 +257,8 @@
 					
 			};
 		</script>-->
-		<script src="js/script.js"></script>
 		<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
-		<script type="text/javascript">
-			
-			ymaps.ready(init);
-			var myMap,
-				myPlacemark;
-
-    		function init(){     
-    		    myMap = new ymaps.Map("YMapsID", {
-    		        center: [59.939107, 30.321463],
-    		        zoom: 17,
-					controls: []	//убираем все кнопки управления
-					
-    		    });
-				myMap.behaviors.disable('scrollZoom');	//отключение зума скролом колесика
-				//myMap.behaviors.disable('drag');
-				
-				myMap.controls.add('zoomControl', {
-					float: 'none',
-					position: {
-						top: '100px',
-						right: '20px'
-					}
-				});
-								   
-				
-				myMap.controls.add('geolocationControl');	//геолокация
-				myMap.controls.add('fullscreenControl');	//полноэкранный режим
-				myMap.controls.add('routeButtonControl', { float: 'right' });
-				
-				myPlacemark = new ymaps.Placemark([59.938631, 30.323055], {
-					hintContent: 'NЁRDS',
-					balloonContent: '191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8' },
-					{
-					iconLayout: 'default#image',	//изображение без доп текста
-					iconImageHref: 'img/marker.png',
-					iconImageSize: [231, 190],
-					iconImageOffset: [-48, -190]	//смещение картинки
-					});
-				
-				myMap.geoObjects.add(myPlacemark);
-	
-    		}
-		</script>
+		<script src="js/script.js"></script>
+		
     </body>
 </html>
