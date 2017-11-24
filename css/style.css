@@ -667,6 +667,7 @@ body {
 	padding-top: 54px;
 	padding-bottom: 54px;
 	background: url("../img/map-marker.png") no-repeat center;
+	
 }
 
 .card-and-contacts .maps {
@@ -681,6 +682,7 @@ body {
 .card-and-contacts .container {
 	position: relative;
 	z-index: 1;
+	pointer-events: none;
 }
 
 .contacts {
@@ -692,6 +694,7 @@ body {
 	min-height: 308px;
 	padding: 48px 50px 47px;
 	background-color: #ffffff;
+	pointer-events: auto;
 }
 
 .contacts h3 {
