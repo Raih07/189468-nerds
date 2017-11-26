@@ -55,22 +55,22 @@
 							<div class="slider-and-output">
 							
 							<div class="filter-cost-slider">
-            	            	<div class="filter-scale">
-									<div class="scale-active"></div>
-            	            	    <button class="filter-thumb filter-thumb-min" type="button" aria-label="Ползунок минимальной суммы"></button>
-            	            	    <button class="filter-thumb filter-thumb-max" type="button" aria-label="Ползунок максимальной суммы"></button>
+            	            	<div class="filter-scale" id="slider">
+            	            	    <button class="filter-thumb filter-thumb-min" id="thumb-min" type="button" aria-label="Ползунок минимальной суммы"></button>
+            	            	    <button class="filter-thumb filter-thumb-max" id="thumb-max" type="button" aria-label="Ползунок максимальной суммы"></button>
+									<div class="scale-active" id="scale-active"></div>
             	            	</div>
             	        	</div>
 							
             	        	<div class="output-cost">
             	        	    <label aria-label="Минимальная стоимость">
 									от
-									<input type="text" id="min-cost" name="min-cost" value="0" >
+									<input type="text" id="mincost" name="mincost" value="" >
 								</label>
 								
 								<label aria-label="Максимальная стоимость">
 									до
-									<input type="text" id="max-cost" name="max-cost" value="15000">
+									<input type="text" id="maxcost" name="maxcost" value="">
 								</label> 
             	        	</div>
 						</div>
