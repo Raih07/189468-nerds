@@ -1084,7 +1084,6 @@ body {
 .output-cost label{
 	font-size: 16px;
 	line-height: 22px;
-	color: #283136;
 	text-transform: uppercase;
 }
 
@@ -1095,7 +1094,7 @@ body {
 	margin-left: 8px;
 	text-align: center;
 	font: inherit;
-	color:#283136;
+	color: #283136;
 	background-color: #eeeeee;
 	border: none;
 	border-radius: 3px;
@@ -1125,7 +1124,7 @@ body {
 	content: "";
 	position: absolute;
 	
-	opacity: 0.5;
+	opacity: 0.4;
 	transition: all 0.1s ease;
 }
 
@@ -1165,11 +1164,28 @@ body {
 .filter-features label {
 	font-size: 16px;
 	line-height: 20px;
-	color: #283136;
 }
 
-.filter-input:focus+label::before {
+.filter-grid label:hover,
+.filter-features label:hover {
+	color: #000000;
+}
+
+.filter-input:focus+label::before,
+.filter-input:hover+label::before {
 	opacity: 1;
+}
+
+.filter-input:disabled+label::before {
+	opacity: 0.1;
+}
+
+.filter-input:disabled+label {
+	opacity: 0.3;
+}
+
+.filter-input:disabled+label:hover {
+	color: #283136;
 }
 
 
