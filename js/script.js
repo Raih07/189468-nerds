@@ -235,6 +235,7 @@ function Slider(options) {
 		
 		MinElem.style.left = pos + 'px';
 		scaleActive.style.left = pos + MinElem.offsetWidth/2 + 'px';
+		setEvent('slide_min', pos);
 	}
 	
 	function setMaxValue(value) {
@@ -252,6 +253,7 @@ function Slider(options) {
 		
 		MaxElem.style.left = pos + 'px';
 		scaleActive.style.right = elem.offsetWidth - (pos + MaxElem.offsetWidth/2) + 'px';
+		setEvent('slide_max', pos);
 	}
 	
 	this.setMinValue = setMinValue;
