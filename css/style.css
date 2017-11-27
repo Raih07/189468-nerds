@@ -52,14 +52,16 @@ body {
     margin: 0 auto;
 }
 
-
+img {
+	max-width: 100%;
+	height: auto;
+}
 
 .main-header {
     padding-top: 49px;
 	line-height: 30px;
     color: #000000;
     background-color:cornflowerblue;/*#eeeeee*/
-	
 }
 
 .header-row {
@@ -1113,11 +1115,12 @@ body {
 
 .filter-option {
 	margin-bottom: 16px;
+	padding-left: 36px;
 }
 
 .filter-option label {
 	position: relative;
-	padding-left: 36px;
+	user-select: none;
 }
 
 .filter-input+label::before {
@@ -1129,7 +1132,7 @@ body {
 }
 
 .filter-input-radio+label::before {
-	left: 0;
+	left: -36px;
 	top: 25%;
 	margin-top: -7px;
 	min-width: 26px;
@@ -1144,7 +1147,7 @@ body {
 }
 
 .filter-input-checkbox+label::before {
-	left: 1px;
+	left: -35px;
 	top: 25%;
 	margin-top: -6px;
 	min-width: 23px;
@@ -1456,6 +1459,10 @@ a.sort-type-active {
 .pagination-list li {
 	display: inline-block;
 	margin-right: 11px;
+}
+
+.pagination-list li:last-child {
+	margin-right: 0;
 }
 
 .pagination-item a {
