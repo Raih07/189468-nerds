@@ -65,8 +65,10 @@ img {
 }
 
 .header-row {
+	display: -webkit-box;
 	display: flex;
-	align-items: center;
+	-webkit-box-align: center;
+	        align-items: center;
 }
 
 .header-left {
@@ -114,8 +116,10 @@ img {
     margin: 0;
 	margin-top: 7px;
     padding: 0;
+	display: -webkit-box;
 	display: flex;
-	justify-content: center;
+	-webkit-box-pack: center;
+	        justify-content: center;
 	flex-wrap: wrap;
 	list-style: none;
 	background-color: yellow;
@@ -363,6 +367,7 @@ img {
 }
 
 .services-list {
+	display: -webkit-box;
 	display: flex;
 	flex-wrap: wrap;
 	padding: 0;
@@ -371,8 +376,11 @@ img {
 }
 
 .service-item {
+	display: -webkit-box;
 	display: flex;
-	flex-direction: column;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	        flex-direction: column;
 	width: 300px;
 	margin-right: 100px;
 	margin-bottom: 80px;
@@ -464,8 +472,10 @@ img {
 .about-company {
 	padding-top: 40px;
 	padding-bottom: 50px;
+	display: -webkit-box;
 	display: flex;
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+	        justify-content: space-between;
 	ohutline: 2px solid green;
 }
 
@@ -585,9 +595,12 @@ img {
 }
 
 .logos-list {
+	display: -webkit-box;
 	display: flex;
-	align-items: center;
-	justify-content: space-between;
+	-webkit-box-align: center;
+	        align-items: center;
+	-webkit-box-pack: justify;
+	        justify-content: space-between;
 	flex-wrap: wrap;
 	margin: 0;
 	padding: 0;
@@ -672,9 +685,13 @@ img {
 
 .contacts {
 	box-sizing: border-box;
+	display: -webkit-box;
 	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	        flex-direction: column;
+	-webkit-box-align: start;
+	        align-items: flex-start;
 	width: 319px;
 	min-height: 308px;
 	padding: 48px 50px 47px;
@@ -714,13 +731,17 @@ img {
 }
 
 .footer-bottom .container {
+	display: -webkit-box;
 	display: flex;
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+	        justify-content: space-between;
 }
 
 .footer-social {
+	display: -webkit-box;
 	display: flex;
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+	        justify-content: space-between;
 	flex-wrap: wrap;
 	width: 260px;
 	font-size: 0;
@@ -763,7 +784,8 @@ img {
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	transform: translateX(-50%) translateY(-50%);
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	        transform: translateX(-50%) translateY(-50%);
 	background-repeat: no-repeat;
 	background-position: center;
 }
@@ -819,7 +841,8 @@ img {
 	position: fixed;
 	left: 50%;
 	top: 50%;
-	transform: translate(-50%, -50%) scale(0);
+	-webkit-transform: translate(-50%, -50%) scale(0);
+	        transform: translate(-50%, -50%) scale(0);
 	box-sizing: border-box;
 	width: 960px;
 	min-height: 590px;
@@ -835,8 +858,11 @@ img {
 
 .modal-write-us.open {
 	/*display: block;*/
-	transform: translate(-50%, -50%) scale(1);
+	-webkit-transform: translate(-50%, -50%) scale(1);
+	        transform: translate(-50%, -50%) scale(1);
+	transition: -webkit-transform 0.2s ease-in;
 	transition: transform 0.2s ease-in;
+	transition: transform 0.2s ease-in, -webkit-transform 0.2s ease-in;
 }
 
 .modal-write-us h2 {
@@ -848,8 +874,10 @@ img {
 }
 
 .feedback-form .wrapper {
+	display: -webkit-box;
 	display: flex;
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+	        justify-content: space-between;
 }
 
 .feedback-form-group {
@@ -961,8 +989,10 @@ img {
 }
 
 .filter-and-catalog {
+	display: -webkit-box;
 	display: flex;
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+	        justify-content: space-between;
 	padding-top: 54px;
 	padding-bottom: 60px;
 }
@@ -1064,8 +1094,10 @@ img {
 
 .output-cost {
 	width: 100%;
+	display: -webkit-box;
 	display: flex;
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+	        justify-content: space-between;
 }
 
 .output-cost label{
@@ -1105,7 +1137,10 @@ img {
 
 .filter-option label {
 	position: relative;
-	user-select: none;
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	        user-select: none;
 }
 
 .filter-input+label::before {
@@ -1205,9 +1240,12 @@ img {
 }
 
 .catalog-row {
+	display: -webkit-box;
 	display: flex;
-	justify-content: space-between;
-	align-items: baseline;
+	-webkit-box-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-align: baseline;
+	        align-items: baseline;
 	margin-bottom: 54px;
 	padding-top: 1px;
 }
@@ -1218,9 +1256,12 @@ img {
 }
 
 .catalog-column-right {
+	display: -webkit-box;
 	display: flex;
-	justify-content: flex-end;
-	align-items: center;
+	-webkit-box-pack: end;
+	        justify-content: flex-end;
+	-webkit-box-align: center;
+	        align-items: center;
 	width: 63%;
 	background-color: dodgerblue;
 }
@@ -1248,6 +1289,7 @@ img {
 }
 
 .sort-filter-type {
+	display: -webkit-box;
 	display: flex;
 	flex-wrap: wrap;
 	/*justify-content: flex-end;*/
@@ -1289,10 +1331,13 @@ a.sort-type-active {
 }
 
 .sort-controls {
+	display: -webkit-box;
 	display: flex;
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+	        justify-content: space-between;
 	padding-top: 1px;
-	align-items: center;
+	-webkit-box-align: center;
+	        align-items: center;
 	width: 40px;
 	margin-left: 47px;
 	font-size: 0;
@@ -1327,9 +1372,11 @@ a.sort-type-active {
 }
 
 .catalog-list {
+	display: -webkit-box;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+	        justify-content: space-between;
 	margin: 0;
 	margin-bottom: 27px;
 	padding: 0;
@@ -1375,7 +1422,8 @@ a.sort-type-active {
 }
 
 .catalog-item:hover .description-item {
-	transform: translateY(0);
+	-webkit-transform: translateY(0);
+	        transform: translateY(0);
 }
 
 .description-item {
@@ -1390,8 +1438,11 @@ a.sort-type-active {
 	text-align: center;
 	background-color: #eeeeee;
 	overflow: auto;
-	transform: translateY(100%);
+	-webkit-transform: translateY(100%);
+	        transform: translateY(100%);
+	transition: -webkit-transform 0.3s ease;
 	transition: transform 0.3s ease;
+	transition: transform 0.3s ease, -webkit-transform 0.3s ease;
 }
 
 .catalog-tittle {
