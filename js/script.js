@@ -94,14 +94,35 @@ minInput.onkeypress = maxInput.onkeypress = function(event) {
     
 minInput.oninput = function() {
 	slider.setMinValue(this.value);
-}
+};
 
 maxInput.oninput = function() {
 	slider.setMaxValue(this.value);
-}
+};
       
 
 function Slider(options) {
+	//полифилл для включения CustomEvent в IE9+
+	try {
+		new CustomEvent("IE has CustomEvent, but doesn't support constructor");
+	} catch (e) {
+		window.CustomEvent = function(event, params) {
+			var evt;
+			params = params || {
+				bubbles: false,
+				cancelable: false,
+				detail: undefined
+			};
+			
+			evt = document.createEvent("CustomEvent");
+			evt.initCustomEvent(event, params.bubbles, params.cancelable, params.detail);
+			return evt;
+		};
+		
+		CustomEvent.prototype = Object.create(window.Event.prototype);
+	}
+	
+	
 	var elem = options.elem;
 	var MinElem = document.getElementById('thumb-min');
 	var MaxElem = document.getElementById('thumb-max');
@@ -121,7 +142,7 @@ function Slider(options) {
 			startDrag(event);
 			return false;
 		}
-	}
+	};
 	
 	
 	function startDrag(event) {
