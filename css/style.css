@@ -141,39 +141,43 @@ img {
 	padding-bottom: 4px;
 	padding-top: 5px;
 	font-weight: 500;
+	color: #000000;
     text-decoration: none;
-    color: #000000;
 }
     
-.main-nav a:hover {
+.main-nav a:hover,
+.basket:hover {
     color: #fb565a;
 }
 
-.main-nav a:focus {
+.main-nav a:focus,
+.basket:focus {
 	outline: none;
     box-shadow: 
 		0 0 0 3px #fff,
 		0 0 6px 6px #d13b3f;
 }
 
-.main-nav a:active {
+.main-nav a:active,
+.basket:active {
 	color: rgba(0, 0, 0, 0.3);
 }
 
-.main-nav a.active {
+.main-nav a.active,
+.basket.active {
 	border-bottom: 2px solid #fb565a;
 }
 
 .basket {
-	font-weight: 500;
-	text-decoration: none;
-	text-transform: uppercase;
 	display: inline-block;
 	margin-top: 7px;
 	padding-bottom: 5px;
 	padding-top: 5px;
-	color: #000000;
 	vertical-align: bottom;
+	font-weight: 500;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #000000;
 }
 
 .basket::before {
@@ -185,29 +189,11 @@ img {
 	margin-bottom: 2px;
 	vertical-align: middle;
 	background-image: url("../img/cart-icon.svg");
-	opacity: 0.3;
 	background-repeat: no-repeat;
 	background-position: center;
+	opacity: 0.3;
 }
 
-.basket:hover {
-    color: #fb565a;
-}
-
-.basket:focus {
-	outline: none;
-    box-shadow: 
-		0 0 0 3px #fff,
-		0 0 6px 6px #d13b3f;
-}
-
-.basket:active {
-	color: rgba(0, 0, 0, 0.3);
-}
-
-.basket.active {
-	border-bottom: 2px solid #fb565a;
-}
 
 /********Слайдер******/
 
@@ -259,8 +245,6 @@ img {
 #btn-3:checked ~ .slide-wrapper .slide3 {
 	display: block;
 }
-
-
 
 .slide .slide-title {
 	display: block;
@@ -614,7 +598,6 @@ img {
 	position: relative;
 	width: 260px;
 	text-align: center;
-	outtline: 1px solid green;
 }
 
 .logo-item:not(:last-child)::after {
@@ -965,14 +948,16 @@ img {
 .page-title-catalog {
 	box-sizing: border-box;
 	min-height: 232px;
-	margin: 0;
 	padding: 66px 0;
+    color: #000000;
+	background-color: #eeeeee;
+}
+
+.page-title-catalog h1 {
 	font-weight: 500;
     font-size: 55px;
     line-height: 55px;
-    color: #000000;
 	text-align: center;
-	background-color: #eeeeee;
 }
 
 .filter-and-catalog {
@@ -1033,8 +1018,7 @@ img {
 	width: 221px;
 	left: 18px;
 	height: 2px;
-	background-color: rgba(215, 220, 222, 0.2);
-	background-color: red;
+	background-color: #d7dcde;
 	z-index: 0;
 }
 
@@ -1052,13 +1036,13 @@ img {
 .filter-thumb {
 	position: absolute;
 	padding: 0;
-	height: 23px;
+	box-sizing: border-box;
+	height: 20px;
 	width: 20px;
-	border: none;
-	background-image: url("../img/filter-button.svg");
-	background-color: transparent;
-	background-repeat: no-repeat;
-	background-position: center;
+	background-color: #ababab;
+	border: 8px solid #ffffff;
+	border-radius: 50%;
+	box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.1);
 	z-index: 2;
 	cursor: pointer;
 }
@@ -1074,7 +1058,8 @@ img {
 }
 
 .filter-thumb:focus {
-	outline: 2px solid #ababab;
+	outline: none;
+	box-shadow: 0 0 0 2px #ababab;
 }
 
 .output-cost {
