@@ -25,7 +25,7 @@
 }*/
 
 body {
-    min-width: 1160px;
+    min-width: 1200px;
     margin: 0;
     padding: 0;
     font-size: 16px;
@@ -1070,7 +1070,7 @@ img {
 	background-color: #00ca74;
 	z-index: 1;
 }
-/*
+
 .filter-thumb {
 	position: absolute;
 	padding: 0;
@@ -1083,8 +1083,8 @@ img {
 	box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.1);
 	z-index: 2;
 	cursor: pointer;
-}*/
-
+}
+/*
 .filter-thumb {
 	position: absolute;
 	padding: 0;
@@ -1097,7 +1097,7 @@ img {
 	background-position: center;
 	z-index: 2;
 	cursor: pointer;
-}
+}*/
 
 .filter-thumb-min {
 	top: -8.6px;

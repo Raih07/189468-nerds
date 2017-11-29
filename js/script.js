@@ -131,7 +131,7 @@ function Slider(options) {
 	
 	var sliderCoords, MinElemCoords, MaxElemCoords, shiftX;
 	
-	var pixelsPerValue = (elem.clientWidth - MinElem.clientWidth) / max;
+	var pixelsPerValue = (elem.offsetWidth - MinElem.offsetWidth) / max;
 	
 	elem.ondragstart = function() {
 		return false;
