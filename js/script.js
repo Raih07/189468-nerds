@@ -1,27 +1,58 @@
 /*******Открытие и закрытие формы(модальное окно)*********/
 
+var modal_win = document.getElementById('modal');
+var modal_btn = document.getElementById('modal_close');
+var btn_write_us = document.getElementById('btn_write_us');
+var form = modal_win.querySelector("form");
+var login = document.getElementById('feedback-form-fullname');
+var email = document.getElementById("feedback-form-email");
+var mess = document.getElementById("feedback-form-message");
+var storage_login = localStorage.getItem("login");
+var storage_mess = localStorage.getItem("mess");
+
 function show_modal(event) {
 	modal_win.classList.add('open');
 	event.preventDefault();
+	if (storage_login) {
+		login.value = storage_login;
+		mess.focus();
+    } else if (storage_mess) {
+		mess.value = storage_mess;
+		login.focus();
+    } else {
+		login.focus();
+	}
 	
 	document.onkeydown = function(event) {
-        if (event.keyCode == 27) { // escape
-			close_modal(modal_win);
+        if (event.keyCode === 27) { // escape
+			close_modal(modal_win);	
         }
       };
 }
 
 function close_modal(modal_win) {
 	modal_win.classList.remove('open');
+	modal_win.classList.remove("modal-error");
 }
 
-var modal_win = document.getElementById('modal');
-var modal_btn = document.getElementById('modal_close');
+
 
 modal_btn.addEventListener('click', function() { close_modal(modal_win); } );
 
-var btn_write_us = document.getElementById('btn_write_us');
 btn_write_us.addEventListener('click', show_modal);
+
+form.addEventListener("submit", function (event) {
+	modal_win.classList.remove("modal-error");
+    if (login.value == '' || email.value == '' || mess.value == '') {
+		
+		modal_win.offsetWidth = modal_win.offsetWidth;
+		modal_win.classList.add("modal-error");
+		event.preventDefault();
+    } else {
+		localStorage.setItem("login", login.value);
+		localStorage.setItem("mess", mess.value);
+    }
+});
 
 /*******Карта в подвале*********/
 
