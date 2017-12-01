@@ -13,14 +13,16 @@ var storage_mess = localStorage.getItem("mess");
 function show_modal(event) {
 	modal_win.classList.add('open');
 	event.preventDefault();
-	if (storage_login) {
+	if (storage_login && storage_mess) {
+		login.value = storage_login;
+		mess.value = storage_mess;
+		email.focus();
+    } else if (storage_login){
 		login.value = storage_login;
 		mess.focus();
-    } else if (storage_mess) {
+	} else {
+		login.focus();
 		mess.value = storage_mess;
-		login.focus();
-    } else {
-		login.focus();
 	}
 	
 	document.onkeydown = function(event) {
@@ -44,9 +46,13 @@ btn_write_us.addEventListener('click', show_modal);
 form.addEventListener("submit", function (event) {
 	modal_win.classList.remove("modal-error");
     if (login.value == '' || email.value == '' || mess.value == '') {
+		//modal_win.offsetWidth = modal_win.offsetWidth;
+		setTimeout(function() {modal_win.classList.add("modal-error");}, 0);
+		//modal_win.classList.add("modal-error");
 		
-		modal_win.offsetWidth = modal_win.offsetWidth;
-		modal_win.classList.add("modal-error");
+		localStorage.setItem("login", login.value);
+		localStorage.setItem("mess", mess.value);
+		
 		event.preventDefault();
     } else {
 		localStorage.setItem("login", login.value);
