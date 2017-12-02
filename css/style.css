@@ -139,7 +139,7 @@ img {
 	
 }
 
-.main-nav a {
+.main-nav .nav-link {
 	display: inline-block;
 	padding: 0;/*22*/
 	padding-bottom: 4px;
@@ -149,20 +149,20 @@ img {
     text-decoration: none;
 }
     
-.main-nav a:hover,
+.main-nav .nav-link:hover,
 .basket:hover {
     color: #fb565a;
 }
 
-.main-nav a:focus,
-.basket:focus {
+.tab-user .nav-link:focus,
+.tab-user .basket:focus {
 	outline: none;
     box-shadow: 
 		0 0 0 3px #fff,
 		0 0 6px 6px #d13b3f;
 }
 
-.main-nav a:active,
+.main-nav .nav-link:active,
 .basket:active {
 	color: rgba(0, 0, 0, 0.3);
 }
@@ -287,7 +287,7 @@ img {
 	background-color: #e74246;	
 }
 
-.btn:focus {
+.tab-user .btn:focus {
 	box-shadow: 
 		0 0 0 3px #fff,
 		0 0 6px 6px #d13b3f;
@@ -311,7 +311,6 @@ img {
 	text-align: center;
 	font-size: 0;
 	line-height: 0;
-	bbackground-color: coral;
 }
 
 .slide-controls label {
@@ -349,9 +348,9 @@ img {
 	opacity: 0;
 }
 
-#btn-1:focus ~ .slide-controls label[for="btn-1"],
-#btn-2:focus ~ .slide-controls label[for="btn-2"],
-#btn-3:focus ~ .slide-controls label[for="btn-3"] {
+.tab-user #btn-1:focus ~ .slide-controls label[for="btn-1"],
+.tab-user #btn-2:focus ~ .slide-controls label[for="btn-2"],
+.tab-user #btn-3:focus ~ .slide-controls label[for="btn-3"] {
     box-shadow: 
 		0 0 0 3px #d13b3f,
 		0 0 6px 6px #ffffff;
@@ -434,7 +433,7 @@ img {
 	background-color: #00bc6c;
 }
 
-.service-apps-btn:focus {
+.tab-user .service-apps-btn:focus {
 	box-shadow: 
 		0 0 0 3px #fff,
 		0 0 6px 6px #38ce8e;
@@ -454,7 +453,7 @@ img {
 	background-color: #eab534;
 }
 
-.service-presents-btn:focus {
+.tab-user .service-presents-btn:focus {
 	box-shadow: 
 		0 0 0 3px #fff,
 		0 0 6px 6px #cda935;
@@ -607,13 +606,13 @@ img {
 	list-style: none;
 }
 
-.logo-item {
+.logos-item {
 	position: relative;
 	width: 260px;
 	text-align: center;
 }
 
-.logo-item:not(:last-child)::after {
+.logos-item:not(:last-child)::after {
   content: "";
   position: absolute;
   right: -21px;
@@ -624,31 +623,31 @@ img {
   background-color: #eeeeee;
 }
 
-.logo-item:first-child {
+.logos-item:first-child {
 	padding-top: 10px;
 }
 
-.logo-item:last-child {
+.logos-item:last-child {
 	padding-top: 5px;
 }
 
-.logo-link {
+.logos-link {
 	outline: none;
 }
 
-.logo-link img {
+.logos-link img {
 	opacity: 0.2;
 }
 
-.logo-link:hover img {
+.logos-link:hover img {
 	opacity: 1;
 }
 
-.logo-link:active img {
+.logos-link:active img {
 	opacity: 0.1;
 }
 
-.logo-link:focus img {
+.tab-user .logos-link:focus img {
 	opacity: 1;
 	box-shadow: 
 		0 0 0 3px #fff,
@@ -774,7 +773,7 @@ img {
 	background-color: #d7373b;
 }
 
-.social-btn:focus {
+.tab-user .social-btn:focus {
 	outline: none;
 	background-color: #e74246;
 	box-shadow:
@@ -975,6 +974,7 @@ img {
 	background-image: url("../img/close-cross.svg");
 	background-repeat: no-repeat;
 	background-position: center;
+	outline: none;
 	opacity: 0.3;
 	cursor: pointer;
 }
@@ -983,13 +983,11 @@ img {
 	opacity: 1;
 }
 
-.modal-write-us .modal-close:focus {
+.tab-user .modal-close:focus {
 	opacity: 1;
-	outline: none;
 	box-shadow: 
 		0 0 0 3px #fff,
 		0 0 6px 9px #d13b3f;
-	
 }
 
 .modal-write-us .modal-close:active {
@@ -1268,7 +1266,7 @@ img {
 	background-color: #d5d5d5;
 }
 
-.btn-filter:focus {
+.tab-user .btn-filter:focus {
 	box-shadow: 
 		0 0 0 3px #fff,
 		0 0 6px 6px #000000;

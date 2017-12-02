@@ -1,3 +1,19 @@
+/***Добавление класса к body для подсветки taba по элементам и его удаление по клику на эл-ах***/
+document.onkeydown = function(event) {
+	var timer;
+        if (event.keyCode === 9) { // TAB
+			document.body.classList.add('tab-user');
+			
+			document.addEventListener('click', function(){
+				document.body.classList.remove('tab-user');
+			});
+        }
+};
+
+document.removeEventListener('click', function(){
+	document.body.classList.remove('tab-user');
+});
+
 /*******Открытие и закрытие формы(модальное окно)*********/
 
 var modal_win = document.getElementById('modal');
@@ -29,7 +45,7 @@ function show_modal(event) {
         if (event.keyCode === 27) { // escape
 			close_modal(modal_win);	
         }
-      };
+	};
 }
 
 function close_modal(modal_win) {
@@ -49,10 +65,6 @@ form.addEventListener("submit", function (event) {
 		//modal_win.offsetWidth = modal_win.offsetWidth;
 		setTimeout(function() {modal_win.classList.add("modal-error");}, 0);
 		//modal_win.classList.add("modal-error");
-		
-		localStorage.setItem("login", login.value);
-		localStorage.setItem("mess", mess.value);
-		
 		event.preventDefault();
     } else {
 		localStorage.setItem("login", login.value);
