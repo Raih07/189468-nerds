@@ -21,15 +21,14 @@
                 			<ul class="site-nav">
                     			<li><a class="nav-link" href="#">Студия</a></li>
                     			<li><a class="nav-link" href="#">Клиенты</a></li>
-                    			<li><a class="nav-link" href="catalog.html" class="active">Магазин</a></li>
+                    			<li class="site-navigation-current"><a class="nav-link" href="catalog.html">Магазин</a></li>
                     			<li><a class="nav-link" href="#">Контакты</a></li>
                 			</ul>
             			</nav>
 					</div>
 					<div class="column header-right">
-						<a class="basket active" href="#">Корзина</a>
+						<a class="basket" href="#">Корзина</a>
 					</div>
-				
 				</div>
             </div>
         </header>
@@ -53,28 +52,26 @@
 							</legend>
 							
 							<div class="slider-and-output">
+								<div class="filter-cost-slider">
+            	            		<div class="filter-scale" id="slider">
+            	            	    	<button class="filter-thumb filter-thumb-min" id="thumb-min" type="button" aria-label="Ползунок минимальной суммы"></button>
+            	            	    	<button class="filter-thumb filter-thumb-max" id="thumb-max" type="button" aria-label="Ползунок максимальной суммы"></button>
+										<div class="scale-active" id="scale-active"></div>
+            	            		</div>
+            	        		</div>
 							
-							<div class="filter-cost-slider">
-            	            	<div class="filter-scale" id="slider">
-            	            	    <button class="filter-thumb filter-thumb-min" id="thumb-min" type="button" aria-label="Ползунок минимальной суммы"></button>
-            	            	    <button class="filter-thumb filter-thumb-max" id="thumb-max" type="button" aria-label="Ползунок максимальной суммы"></button>
-									<div class="scale-active" id="scale-active"></div>
-            	            	</div>
-            	        	</div>
-							
-            	        	<div class="output-cost">
-            	        	    <label aria-label="Минимальная стоимость">
-									от
-									<input type="text" id="mincost" name="mincost" value="">
-								</label>
+            	        		<div class="output-cost">
+            	        	    	<label aria-label="Минимальная стоимость">
+										от
+										<input type="text" id="mincost" name="mincost" value="">
+									</label>
 								
-								<label aria-label="Максимальная стоимость">
-									до
-									<input type="text" id="maxcost" name="maxcost" value="">
-								</label> 
-            	        	</div>
-						</div>
-					
+									<label aria-label="Максимальная стоимость">
+										до
+										<input type="text" id="maxcost" name="maxcost" value="">
+									</label> 
+            	        		</div>
+							</div>
 						</fieldset>
 	
             	        <fieldset class="filter-grid">
@@ -135,7 +132,6 @@
             	    <h2 class="visually-hidden">Список шаблонов</h2>
 					
 					<div class="catalog-row">
-						
 						<div class="catalog-column-left">
 							<span class="sort-filter-tittle">Сортировать:</span>
 						</div>
@@ -153,11 +149,7 @@
 						</div>
 						
 					</div>
-					<!--
-            	    <div class="sort-filter">
-            	        
-            	        
-            	    </div>-->
+					
             	    <ul class="catalog-list">
             	        <li class="catalog-item Sedona-item">
             	            <img src="img/img-sedona.jpg" width="360" height="576" alt="шаблон Sedona">

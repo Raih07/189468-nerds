@@ -19,7 +19,7 @@ document.removeEventListener('click', function(){
 var modal_win = document.getElementById('modal');
 var modal_btn = document.getElementById('modal_close');
 var btn_write_us = document.getElementById('btn_write_us');
-var form = modal_win.querySelector("form");
+var form = modal_win.getElementsByClassName("feedback-form")[0];
 var login = document.getElementById('feedback-form-fullname');
 var email = document.getElementById("feedback-form-email");
 var mess = document.getElementById("feedback-form-message");
