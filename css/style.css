@@ -35,7 +35,7 @@ img {
     padding-top: 49px;
 	line-height: 30px;
     color: #000000;
-    background-color:cornflowerblue;/*#eeeeee*/
+    background-color: #eeeeee;
 }
 
 .header-row {
@@ -47,31 +47,21 @@ img {
 
 .header-left {
 	width: 25%;
-	outline: 1px solid red;
 }
 
 .header-center {
 	width: 50%;
 	text-align: center;
-	outline: 1px solid green;
-	
 }
 
 .header-right {
 	width: 25%;
 	text-align: right;
-	background-color: azure;
-}
-
-.header-logo {
-	
-	background-color: darkgoldenrod; /*удалить*/
 }
 
 .header-logo img {
     width: 160px;
     height: 65px;
-	outline: 1px solid yellow;
 }
 
 .header-logo:hover img {
@@ -80,10 +70,6 @@ img {
 
 .header-logo.active img {
     opacity: 0.3;
-}
-
-.main-nav {
-	background-color: bisque;
 }
 
 .main-nav ul {
@@ -96,18 +82,16 @@ img {
 	        justify-content: center;
 	flex-wrap: wrap;
 	list-style: none;
-	background-color: yellow;
 }
 
 .main-nav li {
     text-transform: uppercase;
-	background-color: aqua;
 	padding: 0 23px;
 }
 
 .main-nav .nav-link {
 	display: inline-block;
-	padding: 0;/*22*/
+	padding: 0;
 	padding-bottom: 6px;
 	padding-top: 5px;
 	font-weight: 500;
@@ -176,7 +160,6 @@ img {
 
 .description-slide {
 	width: 530px;
-	outline: 1px solid blue;
 }
 
 .slide1, .slide2, .slide3 {
@@ -437,7 +420,6 @@ img {
 .about-descript {
 	width: 680px;
 	padding-top: 32px;
-	outline: 1px solid black;
 }
 
 .about-company-title {
@@ -487,7 +469,6 @@ img {
 
 .about-stat {
 	width: 360px;
-	outline: 1px solid blue;
 }
 
 .about-stat img {
@@ -706,7 +687,6 @@ img {
 	width: 260px;
 	font-size: 0;
 	line-height: 0;
-	outline: 1px solid;
 }
 
 .social-btn {
@@ -776,7 +756,6 @@ img {
 .footer-promos {
 	padding-top: 4px;
 	width: 760px;
-	outline: 1px solid;
 }
 
 .footer-promos b {
@@ -983,7 +962,6 @@ img {
 	margin: 0;
 	margin-bottom: 27px;
 	padding: 0;
-	outline: 1px solid;
 }
 
 .filter-form fieldset:last-of-type {
@@ -1186,7 +1164,6 @@ img {
 	color: #283136;
 }
 
-
 .btn-filter {
 	box-sizing: border-box;
 	width: 100%;
@@ -1227,7 +1204,6 @@ img {
 
 .catalog-column-left {
 	width: 34%;
-	background-color: coral;
 }
 
 .catalog-column-right {
@@ -1238,7 +1214,6 @@ img {
 	-webkit-box-align: center;
 	        align-items: center;
 	width: 63%;
-	background-color: dodgerblue;
 }
 
 .sort-filter-tittle {
@@ -1248,8 +1223,6 @@ img {
 	line-height: 18px;
 	text-transform: uppercase;
 	color: #000000;
-	
-	background-color: beige;
 }
 
 .sort-filter-type {
@@ -1259,8 +1232,6 @@ img {
 	margin: 0;
 	padding: 0;
 	list-style: none;
-	
-	background-color: aquamarine;
 }
 
 .sort-filter-type li {
@@ -1303,7 +1274,6 @@ a.sort-type-active {
 	width: 40px;
 	margin-left: 47px;
 	font-size: 0;
-	background-color: chartreuse;
 }
 
 .sort-controls .sort-icon {
