@@ -23,6 +23,7 @@ body {
 
 .container {
 	width: 1160px;
+	padding: 0 20px;
 	margin: 0 auto;
 }
 
@@ -197,8 +198,12 @@ img {
 }
 
 .slide .slide-title {
-	display: block;
+	margin: 0;
 	margin-bottom: 28px;
+	width: inherit;
+}
+
+.slide-title b {
 	font-weight: 500;
 	font-size: 55px;
 	line-height: 55px;
@@ -420,10 +425,12 @@ img {
 	padding-top: 32px;
 }
 
-.about-company-title {
-	display: block;
+.about-descript .about-company-title {
 	margin: 0;
-	margin-bottom: 34px;
+	margin-bottom: 32px;
+}
+
+.about-company-title b{
 	font-weight: 500;
 	font-size: 45px;
 	line-height: 45px;
@@ -475,10 +482,11 @@ img {
 }
 
 .about-stat-subtitle {
-	display: block;
-	margin-top: 29px;
-	margin-bottom: 38px;
+	margin: 29px 0 38px;
 	text-align: center;
+}
+
+.about-stat-subtitle b {
 	font-weight: bold;
 	color: #000000;
 	text-transform: uppercase;
@@ -750,15 +758,17 @@ img {
 	opacity: 0.3;
 }
 
-.footer-promos {
+.footer-bottom .footer-promos {
 	padding-top: 4px;
 	width: 760px;
 }
 
-.footer-promos b {
-	display: block;
+.footer-promos .promo {
 	margin: 0;
 	margin-bottom: 11px;
+}
+
+.prom b {
 	font-weight: bold;
 	font-size: 36px;
 	line-height: 36px;
@@ -1394,8 +1404,8 @@ a.sort-type-active {
 	margin: 0;
 	font-size: 18px;
 	white-space: nowrap;
-	overflow: hidden;
 	text-overflow: ellipsis;
+	overflow: hidden;
 }
 
 .description-item p {
@@ -1440,7 +1450,6 @@ a.sort-type-active {
 	min-height: 50px;
 	min-width: 50px;
 	padding: 16px 20.5px;
-
 	text-align: center;
 	vertical-align: middle;
 	font-size: 16px;

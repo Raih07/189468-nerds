@@ -214,12 +214,12 @@ function Slider(options) {
 		} else {
 			type = 'maxElem';
 		}
-
+		
 		/*
-        document.addEventListener('mousemove', function(event) {
-           onDocumentMouseMove(event, type);} );
-           
-         document.addEventListener('mouseup', onDocumentMouseUp);*/
+		document.addEventListener('mousemove', function(event) {
+			onDocumentMouseMove(event, type);} );
+		
+		document.addEventListener('mouseup', onDocumentMouseUp);*/
 
 		document.onmousemove = function (event) {
 			onDocumentMouseMove(event, type);
@@ -343,10 +343,10 @@ function Slider(options) {
 	}
 
 	function endDrag() {
-		/* 
-        document.removeEventListener('mousemove', function(event) {
-           onDocumentMouseMove(event, type);});
-        document.removeEventListener('mouseup', onDocumentMouseUp);*/
+		/*
+		document.removeEventListener('mousemove', function(event) {
+			onDocumentMouseMove(event, type);});
+		document.removeEventListener('mouseup', onDocumentMouseUp);*/
 		document.onmousemove = null;
 		document.onmouseup = null;
 	}
