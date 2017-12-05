@@ -1113,7 +1113,6 @@ img {
 .filter-input + label::before {
 	content: "";
 	position: absolute;
-
 	opacity: 0.4;
 	transition: all 0.1s ease;
 }
